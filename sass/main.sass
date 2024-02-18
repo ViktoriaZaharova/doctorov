@@ -1,0 +1,108 @@
+@import 'vars'
+
+// home
+.home
+	.subtitle-text
+		max-width: 743px
+		width: 100%
+		margin: 0 auto
+
+.list-category
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 24px 0 0
+	font-size: 14px
+	line-height: 150%
+	&__link
+		@include d-flex
+		border: 1px solid #D2DAE1
+		border-radius: 80px
+		padding: 8px 14px
+		color: $black
+
+		margin: 0 8px 8px 0
+		&:hover
+			color: $accent
+		&:focus, &:active, &.active
+			color: $accent
+			border-color: $accent
+		&.disabled, &:disabled
+			opacity: 0.5
+			color: $black
+			border-color: #D2DAE1
+
+.link-toggle-category
+	padding: 8px 14px
+	border-radius: 80px
+	font-size: 14px
+	display: none
+
+.advantages-wrapper
+	width: 100%
+	margin: 40px 0 0
+
+.advantages-box
+	width: 100%
+	height: 100%
+	background: #F3F6FA
+	border-radius: 6px
+	display: flex
+	align-items: flex-start
+	padding: 24px
+	&__icon
+		@include d-flex
+		margin: 0 16px 0 0
+		width: 32px
+		height: 32px
+		min-width: 32px
+	&__body
+		.box-text
+			margin: 4px 0 0
+			font-size: 14px
+			span
+				color: $grey
+
+// servies
+.btn-toggle-services
+	margin: 32px auto 0
+
+.list-services
+	margin: 24px 0 0
+	line-height: 150%
+	li
+		z-index: 1
+		position: relative
+		width: 100%
+		display: flex
+		align-items: center
+		margin: 0 0 16px
+		overflow: hidden
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 6px
+			width: 100%
+			height: 1px
+			border-bottom: 1px dashed #D2DAE1
+			z-index: -1
+	p
+		padding: 0 12px 0 0
+		position: relative
+		z-index: 1
+		background: #F3F6FA
+	span
+		position: relative
+		display: inline-block
+		min-width: 112px
+		color: $accent
+		padding: 0 0 0 12px
+		background: #F3F6FA
+		margin-left: auto
+
+.btn-toggle-services
+	display: none

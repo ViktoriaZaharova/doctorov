@@ -1,0 +1,58 @@
+@import "vars"
+
+// header
+header
+	padding: 32px 0
+	background: #F3F6FA
+
+.btn-burger
+	display: none
+	align-items: center
+	justify-content: center
+	stroke: $accent
+	width: 24px
+	height: 24px
+	min-width: 24px
+
+.nav-menu
+	margin: 0 auto 0 40px
+
+.menu
+	font-size: 16px
+	display: flex
+	align-items: center
+	margin: 0 40px 0 0
+	.nav-item
+		margin: 0 40px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		padding: 0
+		color: $black
+		font-size: 16px
+		&:hover
+			color: $accent
+
+.link
+	display: flex
+	align-items: center
+	color: $black
+	&-icon
+		@include d-flex
+		fill: none
+		stroke: $accent
+		width: 20px
+		height: 20px
+		min-width: 20px
+		margin: 0 12px 0 0
+		svg
+			@include d-flex
+	&:hover
+		color: $accent
+	&:focus, &:active, &.active
+		color: #075CBF
+	&.disabled, &:disabled
+		color: $grey
+
+.phone
+	margin: 0 0 0 40px

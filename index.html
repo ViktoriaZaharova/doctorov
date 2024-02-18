@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doctorov</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="#" class="btn-burger"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg></a>
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<ul class="my-ul menu">
+							<li class="nav-item"><a href="clinics.html" class="nav-link">Клиники</a></li>
+							<li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+							<li class="nav-item"><a href="#services" class="nav-link go_to">Услуги</a></li>
+						</ul>
+
+						<a href="#" class="link-favorites link">
+							<span class="link-favorites__icon link-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#favorite"></use>
+								</svg></span>
+							<span class="link-favorites__text link-text">Избранное</span>
+						</a>
+					</nav>
+
+
+					<a href="#" class="locaton-city link" data-bs-toggle="modal" data-bs-target="#locationModal">
+						<span class="locaton-city__icon link-icon"><img src="img/location.svg" alt=""></span>
+						<span class="locaton-city__text link-text">Москва</span>
+					</a>
+
+					<a href="tel:+74995193397" class="phone link">
+						<span class="phone__icon link-icon">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</span>
+						<span class="phone__text link-text">+7 (499) 519-33-97</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="home bg-white p-64">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center mb-48">
+					<h1>Найти врача в <span class="color-accent">Москве</span></h1>
+					<div class="subtitle-text">
+						<p>Поиск врачей которые принимают онлайн в городе Москва, огромная база докторов готовых помочь прямо сейчас
+							с онлайн
+							записью</p>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<form method="post" class="form-search">
+						<label>
+							<input type="text" name="search" required>
+							<span class="input-text">Фамилия врача, специальность или название клиники</span>
+							<span class="input-clear"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></span>
+						</label>
+						<div class="result-search">
+							<div class="result-search-catelory">
+								<h3>Услуги</h3>
+								<div class="list-result-search">
+									<a href="#" class="list-result-search__link">
+										<span class="color-accent">Массаж</span>
+										<span class="list-result-search__value">(118)</span>
+									</a>
+									<a href="#" class="list-result-search__link">
+										Аппаратный <span class="color-accent">массаж</span>
+										<span class="list-result-search__value">(5)</span>
+									</a>
+								</div>
+							</div>
+							<div class="result-search-catelory">
+								<h3>Специализация</h3>
+								<div class="list-result-search">
+									<a href="#" class="list-result-search__link">
+										<span class="color-accent">Массаж</span>исты
+										<span class="list-result-search__value">(243)</span>
+									</a>
+									<a href="#" class="list-result-search__link">
+										Детские <span class="color-accent">массаж</span>исты
+										<span class="list-result-search__value">(24)</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-accent btn-search-submit">
+							<span class="btn-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</span>
+							<span class="btn-text">Найти</span>
+						</button>
+					</form>
+
+					<div class="list-category">
+						<a href="catalog.html" class="list-category__link">Акушеры</a>
+						<a href="catalog.html" class="list-category__link">Аллергологи</a>
+						<a href="catalog.html" class="list-category__link">Ангиохирурги</a>
+						<a href="catalog.html" class="list-category__link">Андрологи</a>
+						<a href="catalog.html" class="list-category__link">Анестезиологи</a>
+						<a href="catalog.html" class="list-category__link">Анестезиологи-реаниматологи</a>
+						<a href="catalog.html" class="list-category__link">Аритмологи</a>
+						<a href="catalog.html" class="list-category__link">Артрологи</a>
+						<a href="catalog.html" class="list-category__link">Вегетологи</a>
+						<a href="catalog.html" class="list-category__link">Венерологи</a>
+						<a href="catalog.html" class="list-category__link">Вертебрологи</a>
+						<a href="catalog.html" class="list-category__link">Врачи МРТ</a>
+						<a href="catalog.html" class="list-category__link">Гастроэнтерологи</a>
+						<a href="catalog.html" class="list-category__link">Гематологи</a>
+						<a href="catalog.html" class="list-category__link">Гемостазиологи</a>
+						<a href="catalog.html" class="list-category__link">Генетики</a>
+						<a href="catalog.html" class="list-category__link">Гепатологи</a>
+						<a href="catalog.html" class="list-category__link">Гинекологи-эндокринологи</a>
+						<a href="catalog.html" class="list-category__link">Гинекологи</a>
+						<a href="catalog.html" class="list-category__link">Гирудотерапевты</a>
+						<a href="catalog.html" class="list-category__link">Гнатологи</a>
+						<a href="catalog.html" class="list-category__link">Гомеопаты</a>
+						<a href="catalog.html" class="list-category__link">Дерматологи</a>
+						<a href="catalog.html" class="list-category__link">Дефектологи</a>
+						<a href="catalog.html" class="list-category__link">Диабетологи</a>
+						<a href="catalog.html" class="list-category__link">Иммунологи</a>
+						<a href="catalog.html" class="list-category__link">Инфекционисты</a>
+						<a href="catalog.html" class="list-category__link">Кардиологи</a>
+						<a href="catalog.html" class="list-category__link">Кардиохирурги</a>
+						<a href="catalog.html" class="list-category__link">Гинекологи-эндокринологи</a>
+						<a href="catalog.html" class="list-category__link">Гинекологи</a>
+						<a href="catalog.html" class="list-category__link">Гирудотерапевты</a>
+						<a href="#" class="link-toggle-category btn btn-border-accent">+81</a>
+					</div>
+
+					<div class="advantages-wrapper">
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-3 mb-16">
+								<div class="advantages-box">
+									<div class="advantages-box__icon"><img src="img/advantages-icon1.svg" alt=""></div>
+									<div class="advantages-box__body">
+										<h3>3 845 915</h3>
+										<div class="box-text"><span>отзывов</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 mb-16">
+								<div class="advantages-box">
+									<div class="advantages-box__icon"><img src="img/advantages-icon2.svg" alt=""></div>
+									<div class="advantages-box__body">
+										<h3>15 638 475</h3>
+										<div class="box-text"><span>записей на прием</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 mb-16">
+								<div class="advantages-box">
+									<div class="advantages-box__icon"><img src="img/advantages-icon3.svg" alt=""></div>
+									<div class="advantages-box__body">
+										<h3>705 619</h3>
+										<div class="box-text"><span>врачей</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-lg-3 mb-16">
+								<div class="advantages-box">
+									<div class="advantages-box__icon"><img src="img/advantages-icon4.svg" alt=""></div>
+									<div class="advantages-box__body">
+										<h3>70 048</h3>
+										<div class="box-text"><span>клиник</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="prices m-80" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center mb-48">
+					<h2>Стоимость медицинских услуг в <span class="color-accent">Москве</span></h2>
+					<div class="subtitle-text">
+						<p>Актуальная информация о ценах на медицинские услуги</p>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<form method="post" class="form-search form-search-white">
+						<label>
+							<input type="text" name="search" required>
+							<span class="input-text">Введите название услуги</span>
+							<span class="input-clear"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></span>
+						</label>
+
+						<button type="submit" class="btn btn-accent btn-search-submit">
+							<span class="btn-icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</span>
+							<span class="btn-text">Найти</span>
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<ul class="list-services my-ul">
+						<li>
+							<p>АСИТ без стоимости препарата</p>
+							<span>от 700 ₽</span>
+						</li>
+						<li>
+							<p>Аллергопробы</p>
+							<span>от 260 ₽</span>
+						</li>
+						<li>
+							<p>Аппликационная анестезия</p>
+							<span>от 50 ₽</span>
+						</li>
+						<li>
+							<p>Вазэктомия (вазорезекция)</p>
+							<span>от 5 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение Каверджекта</p>
+							<span>от 2 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение/извлечение пессария</p>
+							<span>от 700 ₽</span>
+						</li>
+						<li>
+							<p>Аппликационная анестезия</p>
+							<span>от 50 ₽</span>
+						</li>
+						<li>
+							<p>Вазэктомия (вазорезекция)</p>
+							<span>от 5 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение Каверджекта</p>
+							<span>от 2 000 ₽</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-6">
+					<ul class="list-services my-ul">
+						<li>
+							<p>АСИТ без стоимости препарата</p>
+							<span>от 700 ₽</span>
+						</li>
+						<li>
+							<p>Аллергопробы</p>
+							<span>от 260 ₽</span>
+						</li>
+						<li>
+							<p>Аппликационная анестезия</p>
+							<span>от 50 ₽</span>
+						</li>
+						<li>
+							<p>Вазэктомия (вазорезекция)</p>
+							<span>от 5 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение Каверджекта</p>
+							<span>от 2 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение/извлечение пессария</p>
+							<span>от 700 ₽</span>
+						</li>
+						<li>
+							<p>Аппликационная анестезия</p>
+							<span>от 50 ₽</span>
+						</li>
+						<li>
+							<p>Вазэктомия (вазорезекция)</p>
+							<span>от 5 000 ₽</span>
+						</li>
+						<li>
+							<p>Введение Каверджекта</p>
+							<span>от 2 000 ₽</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-12">
+					<a href="#" class="btn btn-border-accent btn-toggle-services">Все услуги</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cities-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2>В других городах</h2>
+				</div>
+				<div class="col-12">
+					<div class="list-category">
+						<a href="catalog.html" class="list-category__link">Архангельск</a>
+						<a href="catalog.html" class="list-category__link">Астрахань</a>
+						<a href="catalog.html" class="list-category__link">Барнаул</a>
+						<a href="catalog.html" class="list-category__link">Белгород</a>
+						<a href="catalog.html" class="list-category__link">Брянск</a>
+						<a href="catalog.html" class="list-category__link">Владикавказ</a>
+						<a href="catalog.html" class="list-category__link">Владимир</a>
+						<a href="catalog.html" class="list-category__link">Волгоград</a>
+						<a href="catalog.html" class="list-category__link">Воронеж</a>
+						<a href="catalog.html" class="list-category__link">Екатеринбург</a>
+						<a href="catalog.html" class="list-category__link">Иваново</a>
+						<a href="catalog.html" class="list-category__link">Ижевск</a>
+						<a href="catalog.html" class="list-category__link">Иркутск</a>
+						<a href="catalog.html" class="list-category__link">Йошкар-Ола</a>
+						<a href="catalog.html" class="list-category__link">Казань</a>
+						<a href="catalog.html" class="list-category__link">Калининград</a>
+						<a href="catalog.html" class="list-category__link">Калуга</a>
+						<a href="catalog.html" class="list-category__link">Кемерово</a>
+						<a href="catalog.html" class="list-category__link">Киров</a>
+						<a href="catalog.html" class="list-category__link">Краснодар</a>
+						<a href="catalog.html" class="list-category__link">Красноярск</a>
+						<a href="catalog.html" class="list-category__link">Липецк</a>
+						<a href="catalog.html" class="list-category__link">Махачкала</a>
+						<a href="catalog.html" class="list-category__link">Москва</a>
+						<a href="catalog.html" class="list-category__link">Мурманск</a>
+						<a href="catalog.html" class="list-category__link">Нижний Новгород</a>
+						<a href="catalog.html" class="list-category__link">Новосибирск</a>
+						<a href="catalog.html" class="list-category__link">Омск</a>
+						<a href="catalog.html" class="list-category__link">Оренбург</a>
+						<a href="catalog.html" class="list-category__link">Иваново</a>
+						<a href="catalog.html" class="list-category__link">Ижевск</a>
+						<a href="catalog.html" class="list-category__link">Иркутск</a>
+						<a href="#" class="link-toggle-category btn btn-border-accent">+25</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Выберите свой город</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-search"></form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
