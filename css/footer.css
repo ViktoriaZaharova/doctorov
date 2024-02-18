@@ -1,1 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer {
+  background: #fff;
+}
+footer .box-text p {
+  margin: 0;
+}
+
+.footer-top {
+  padding: 48px 0 55px;
+}
+
+.footer-call {
+  margin: 0 0 24px;
+}
+.footer-call:last-child {
+  margin: 0;
+}
+.footer-call p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #707D89;
+}
+
+.footer-phone {
+  color: #141414;
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer-phone:hover {
+  color: #237AE0;
+}
+
+.footer-mail {
+  color: #237AE0;
+  font-weight: 500;
+}
+.footer-mail:hover {
+  color: #1368CC;
+}
+
+.footer-menu {
+  font-size: 14px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+.footer-menu li {
+  margin: 0 0 14px;
+}
+.footer-menu li:last-child {
+  margin: 0;
+}
+.footer-menu li a {
+  color: #141414;
+}
+.footer-menu li a:hover {
+  color: #237AE0;
+}
+
+.footer-bottom {
+  padding: 32px 0;
+  border-top: 1px solid #D2DAE1;
+  font-size: 14px;
+  line-height: 150%;
+  color: #707D89;
+}

@@ -339,6 +339,13 @@ h3, .h3 {
   font-size: 24px;
 }
 
+h4, .h4 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
 .subtitle-text {
   width: 100%;
   text-align: center;

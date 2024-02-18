@@ -1,3 +1,53 @@
 @import "fonts"
 @import "vars"
 
+// footer
+footer
+	background: #fff
+	.box-text
+		p
+			margin: 0
+
+.footer-top
+	padding: 48px 0 55px
+
+.footer-call
+	margin: 0 0 24px
+	&:last-child
+		margin: 0
+	p
+		margin: 0 0 12px
+		font-size: 14px
+		color: $grey
+
+.footer-phone
+	color: $black
+	font-size: 24px
+	font-weight: 500
+	&:hover
+		color: $accent
+
+.footer-mail
+	color: $accent
+	font-weight: 500
+	&:hover
+		color: $accent-hover
+
+.footer-menu
+	font-size: 14px
+	column-count: 2
+	li
+		margin: 0 0 14px
+		&:last-child
+			margin: 0
+		a
+			color: $black
+			&:hover
+				color: $accent
+
+.footer-bottom
+	padding: 32px 0
+	border-top: 1px solid #D2DAE1
+	font-size: 14px
+	line-height: 150%
+	color: $grey
