@@ -14,7 +14,7 @@
 	flex-wrap: wrap
 	margin: 24px 0 0
 	font-size: 14px
-	line-height: 150%
+
 	&__link
 		@include d-flex
 		border: 1px solid #D2DAE1
@@ -70,7 +70,7 @@
 
 .list-services
 	margin: 24px 0 0
-	line-height: 150%
+
 	li
 		z-index: 1
 		position: relative
@@ -106,3 +106,295 @@
 
 .btn-toggle-services
 	display: none
+
+// doctors page
+.form-search-doctors
+	margin: 0 0 20px
+	label
+		max-width: none
+		width: 50%
+		margin: 0 12px 12px 0
+
+.search-doctors-result
+	text-align: left
+	margin: 0 0 32px
+	display: flex
+	align-items: flex-start
+	span
+		color: $grey
+		display: inline-flex
+		align-items: center
+		&::before
+			content: ''
+			display: inline-block
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			background: $grey
+			margin: 0 16px
+
+.filter-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+
+.filter-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 32px 0 0
+	p
+		margin: 0 16px 0 0
+		color: $grey
+
+.btn-medicine
+	margin: 0 auto 0 0
+
+.page-header
+	width: 100%
+	background: #fff
+	border-radius: 40px
+	padding: 32px 0
+
+.page-body
+	padding: 32px 0 88px
+
+.doctors-card
+	width: 100%
+	min-height: 453px
+	margin: 0 0 16px
+	background: #fff
+	padding: 32px
+	border-radius: 6px
+	position: relative
+	z-index: 1
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	font-size: 14px
+	&:last-child
+		margin: 0
+	&__head
+		margin: 0 0 24px
+	&__body
+		position: relative
+		padding: 0 24px 0 144px
+		z-index: 1
+		width: calc(100% - 360px)
+	&__photo
+		position: absolute
+		left: 0
+		top: 0
+		max-width: 112px
+		width: 100%
+		&-avatar
+			@include d-flex
+			width: 112px
+			height: 112px
+			border-radius: 50%
+			border: 1px solid #D2DAE1
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	&__footer
+		max-width: 360px
+		width: 100%
+		display: flex
+		flex-direction: column
+		.btn
+			font-weight: 500
+		.doctors-card-item
+			margin: 0 0 16px
+			&:last-child
+				margin: 0
+		.doctors-card-address
+			margin: auto 0 16px
+		.doctors-card-item-time
+			margin: 0 0 8px
+
+.add-favorite
+	width: 38px
+	height: 38px
+	border-radius: 50%
+	background: #fff
+	@include d-flex
+	padding: 11px
+	fill: none
+	stroke: $grey
+	position: absolute
+	right: 0
+	top: 0
+	z-index: 1
+	&:hover, &:focus, &:active, &.active
+		stroke: $accent
+		fill: $accent
+
+.rating-wrapper
+	margin: 16px auto 0
+	width: 100%
+
+.rating-value
+	text-align: center
+	margin: 8px auto 0
+
+.list-rating
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	li
+		width: 16px
+		height: 16px
+		margin: 0 4px 0 0
+		@include d-flex
+		fill: $accent
+		&:last-child
+			margin: 0
+
+.doctor-name
+	margin: 0 0 8px
+
+.doctor-position
+	color: $grey
+
+.doctors-card-item
+	width: 100%
+	margin: 0 0 24px
+	&:last-child
+		margin: 0
+	&__title
+		width: 100%
+		margin: 0 0 8px
+		color: $grey
+		&:last-child
+			margin: 0
+		&.color-black
+			color: $black
+
+.doctor-information
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		&::after
+			content: '/'
+			margin: 0 8px
+		&:last-child
+			&::after
+				display: none
+
+.reception-type-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	justify-content: space-between
+
+.reception-type-box
+	width: calc(50% - 4px)
+	background: #fff
+	border: 1px solid #D2DAE1
+	border-radius: 6px
+	padding: 12px 20px
+	p
+		margin: 0 0 4px
+		color: $grey
+	.price-wrapper
+		font-size: 18px
+		font-weight: 500
+	&.active
+		border-color: $accent
+		background: rgba($accent, .06)
+
+.appointment-box
+	display: flex
+	align-items: flex-end
+	justify-content: space-between
+
+.doctor-phone
+	color: $black
+	font-size: 18px
+	font-weight: 500
+	&:hover
+		color: $accent
+
+.time-list
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 -3px
+	li
+		margin: 0 0 6px 0
+		padding: 0 3px
+		width: 20%
+
+.time-list-item
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	border-radius: 6px
+	width: 100%
+	height: 100%
+	padding: 9px
+	background: $accent
+	color: #fff
+	font-weight: 500
+	&.no-active
+		background: rgba($accent, .06)
+		color: $grey
+	span
+		display: inline-block
+	p
+		margin: 0 9px 0 0
+	&.active
+		background: rgba($accent, .06)
+		border-color: $accent
+
+.time-list-date
+	li
+		flex: 1
+	.time-list-item
+		border: 1px solid #D2DAE1
+		background: transparent
+		color: $black
+		font-weight: normal
+		&.active
+			border-color: $accent
+		span
+			color: $grey
+
+.addres-item
+	margin: 8px 0 0
+	color: $grey
+
+.list-address
+	width: 100%
+
+.list-address-item
+	display: flex
+	align-items: center
+	margin: 0 0 8px
+	&::before
+		content: ''
+		width: 6px
+		height: 6px
+		min-width: 6px
+		border-radius: 5px
+		background: #A2A5B4
+		margin: 0 8px 0 0
+	&.active
+		&::before
+			background: #29B1A6
+	&:last-child
+		margin: 0
+	span
+		display: inline-block
+		margin: 0 0 0 8px
+		color: $grey

@@ -40,7 +40,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: normal
+	line-height: 150%
 	font-family: $default-font
 	font-weight: normal
 	background: #F3F6FA
@@ -116,6 +116,9 @@ input[type="radio"], input[type="checkbox"]
 	width: 100%
 	padding: 0 20px
 	transition: .3s ease
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
 
 .input-clear
 	align-items: center
@@ -138,11 +141,33 @@ input[type="radio"], input[type="checkbox"]
 	&:disabled, &.disabled
 		opacity: 0.5
 
+.select-my
+	background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
+	background-size: 20px
+	color: $black
+	padding: 0 40px 0 20px
+	height: 45px
+	&:hover
+		background: #fff url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
+		background-size: 20px
+		color: $black
+	&:focus, &.active, &:active
+		border-color: $accent
+		background: #fff url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
+		background-size: 20px
+		color: $black
+	&:disabled, &.disabled
+		opacity: 0.5
+		background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
+		background-size: 20px
+		color: $black
+
 label
 	display: block
 	width: 100%
 	margin: 0 0 12px
-
+	position: relative
+	overflow: hidden
 	&:last-child
 		margin: 0
 
@@ -189,6 +214,22 @@ button, .btn
 		background: $accent
 		color: #fff
 		opacity: 0.5
+	.btn-icon
+		fill: none
+		stroke: #fff
+
+.btn-accent-light
+	background: rgba($accent, .06)
+	color: $black
+	&:hover
+		background: rgba($accent, .1)
+		color: $black
+	.btn-icon
+		fill: none
+		stroke: $accent
+
+.btn-border
+	border-radius: 80px
 
 .btn-border-accent
 	border: 1px solid $accent
@@ -205,6 +246,33 @@ button, .btn
 		border: 1px solid $accent
 		color: $accent
 
+.btn-border-grey
+	border: 1px solid #D2DAE1
+	color: $black
+
+	&:hover
+		background: rgba($accent, .06)
+		color: $accent
+	&:focus, &.active, &:active
+		background: $accent
+		color: #fff
+	&.disabled, &:disabled
+		opacity: 0.5
+		border: 1px solid $accent
+		color: $accent
+	.btn-icon
+		fill: none
+		stroke: $accent
+
+.btn-sm
+	padding: 11px 24px
+	font-size: 14px
+	.btn-icon
+		width: 20px
+		height: 20px
+		min-width: 20px
+		fill: none
+
 .btn-icon
 	width: 24px
 	height: 24px
@@ -216,6 +284,22 @@ button, .btn
 	display: inline-block
 	width: 100%
 	height: 100%
+
+.btn-group
+	flex-wrap: wrap
+	.btn
+		flex: none
+		margin: 0 12px 0 0
+		&:last-child
+			margin: 0
+	.btn-border
+		border-radius: 80px
+
+.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn
+	margin-left: 0
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
+	border-radius: 80px
 
 strong, b
 	font-weight: bold
@@ -241,7 +325,7 @@ h1, .h1
 h2, .h2
 	text-align: center
 	width: 100%
-	font-size: 40px
+	font-size: 32px
 	font-weight: 500
 	margin: 0 auto 16px
 
@@ -255,7 +339,7 @@ h4, .h4
 	width: 100%
 	font-size: 18px
 	font-weight: 500
-	margin: 0 0 16px	
+	margin: 0 0 16px
 
 .subtitle-text
 	width: 100%
@@ -268,7 +352,7 @@ h4, .h4
 
 .row
 	margin: 0 -12px
-	> *
+	>*
 		padding: 0 12px
 
 .mb-12
@@ -296,6 +380,12 @@ a.color-accent
 	color: $accent
 	&:hover
 		color: $grey
+
+.color-grey
+	color: $grey
+
+.color-black
+	color: $black
 
 .bg-white
 	background: #fff
@@ -332,6 +422,33 @@ a.color-accent
 .inp-check:checked ~ .checkbox-custom
 	background: #fff url("../img/check-black.svg") no-repeat center
 	background-size: 8px
+
+.label-radio-type
+	position: relative
+	z-index: 1
+	padding: 12px 24px
+	width: fit-content
+	margin: 0 8px 0 0
+	cursor: pointer
+	font-size: 14px
+	// line-height: 150%
+	color: $accent
+	input
+		appearance: none
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		border: 1px solid $accent
+		border-radius: 80px
+		background: transparent
+		&:checked
+			background: $accent
+			+ .label-radio-type__text
+				color: #fff
+
 //checkbox my end
 
 .form-search
@@ -340,9 +457,12 @@ a.color-accent
 	display: flex
 	align-items: flex-start
 	label
-		width: calc(100% - 12px - 137px)
+		width: 100%
 		position: relative
-		margin: 0 auto 0 0
+		margin: 0 12px 0 0
+	[type="submit"]
+		min-width: 137px
+		white-space: nowrap
 
 .form-search-white
 	input
@@ -388,9 +508,109 @@ a.color-accent
 		color: $black
 		width: 100%
 		font-size: 16px
-		line-height: 150%
+		// line-height: 150%
 		&:hover
 			background: #F3F6FA
 			border-radius: 6px
 	&__value
 		color: $grey
+
+.nav-breadcrumb
+	width: 100%
+	margin: 0 0 32px
+
+.breadcrumb
+	margin: 0
+	width: 100%
+	font-size: 14px
+
+.breadcrumb-item
+	display: flex
+	align-items: center
+	padding: 0
+	+ .breadcrumb-item
+		padding: 0
+	&::before
+		display: none
+	&::after
+		content: ''
+		background: url('../img/arrow-right.svg') no-repeat center
+		background-size: 100%
+		width: 12px
+		height: 12px
+		padding: 0
+		margin: 0 12px
+	a
+		color: $grey
+		&:hover
+			color: $accent
+	&.active
+		color: $black
+		&::after
+			display: none
+
+.nav-pagination
+	width: 100%
+	margin: 24px 0 0
+
+.pagination
+	width: 100%
+	margin: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	border: none
+	border-radius: 0
+	.page-item
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0
+		&:not(&:first-child)
+			.page-link
+				margin: 0
+	.page-link
+		width: 40px
+		height: 40px
+		min-width: 40px
+		background: transparent
+		padding: 0
+		@include d-flex
+		border: none
+		border-radius: 6px
+		color: #1F2125
+		&:focus
+			box-shadow: none
+		&.active
+			background: $accent
+			color: #fff
+		svg
+			fill: none
+			stroke: $grey
+			width: 24px
+			height: 24px
+
+.tooltip-btn
+	margin: 0 0 0 12px
+	width: 16px
+	height: 16px
+	min-width: 16px
+
+.tooltip
+	opacity: 1 !important
+
+.tooltip-inner
+	min-width: 328px
+	opacity: 1 !important
+	background: #fff
+	box-shadow: 0 6px 20px rgba(#141414, .08)
+	padding: 16px
+	font-size: 14px
+	color: $black
+	font-family: $default-font
+	line-height: 150%
+	text-align: left
+	border: none
+	border-radius: 6px
+
+.tooltip-arrow::before
+	display: none

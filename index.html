@@ -49,7 +49,6 @@
 						</a>
 					</nav>
 
-
 					<a href="#" class="locaton-city link" data-bs-toggle="modal" data-bs-target="#locationModal">
 						<span class="locaton-city__icon link-icon"><img src="img/location.svg" alt=""></span>
 						<span class="locaton-city__text link-text">Москва</span>
@@ -63,6 +62,65 @@
 						</span>
 						<span class="phone__text link-text">+7 (499) 519-33-97</span>
 					</a>
+
+					<div class="btn-search"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#search"></use>
+					</svg></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-search-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<form method="post" class="form-search form-search-white">
+							<label>
+								<input type="text" name="search" required>
+								<span class="input-text">Фамилия врача, специальность или название клиники</span>
+								<span class="input-clear"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg></span>
+							</label>
+							<div class="result-search">
+								<div class="result-search-catelory">
+									<h3>Услуги</h3>
+									<div class="list-result-search">
+										<a href="#" class="list-result-search__link">
+											<span class="color-accent">Массаж</span>
+											<span class="list-result-search__value">(118)</span>
+										</a>
+										<a href="#" class="list-result-search__link">
+											Аппаратный <span class="color-accent">массаж</span>
+											<span class="list-result-search__value">(5)</span>
+										</a>
+									</div>
+								</div>
+								<div class="result-search-catelory">
+									<h3>Специализация</h3>
+									<div class="list-result-search">
+										<a href="#" class="list-result-search__link">
+											<span class="color-accent">Массаж</span>исты
+											<span class="list-result-search__value">(243)</span>
+										</a>
+										<a href="#" class="list-result-search__link">
+											Детские <span class="color-accent">массаж</span>исты
+											<span class="list-result-search__value">(24)</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						
+							<button type="submit" class="btn btn-accent btn-search-submit">
+								<span class="btn-icon">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</span>
+								<span class="btn-text">Найти</span>
+							</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -213,7 +271,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center mb-48">
-					<h2>Стоимость медицинских услуг в <span class="color-accent">Москве</span></h2>
+					<h2 class="h1">Стоимость медицинских услуг в <span class="color-accent">Москве</span></h2>
 					<div class="subtitle-text">
 						<p>Актуальная информация о ценах на медицинские услуги</p>
 					</div>
@@ -334,7 +392,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h2>В других городах</h2>
+					<h2 class="h1">В других городах</h2>
 				</div>
 				<div class="col-12">
 					<div class="list-category">
@@ -437,22 +495,59 @@
 
 	<!-- Модальное окно -->
 	<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+				</button>
 				<div class="modal-header">
-					<div class="modal-title">Выберите свой город</div>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-						<svg class="svg-icon">
-							<use xlink:href="img/sprite.svg#close"></use>
-						</svg>
-					</button>
+					<div class="modal-title h2">Выберите свой город</div>
 				</div>
 				<div class="modal-body">
-					<form method="post" class="form-search"></form>
+					<form method="post" class="form-search form-search-modal">
+						<label>
+							<input type="text" name="search" required>
+							<span class="input-text">Введите название города</span>
+							<span class="input-clear"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></span>
+						</label>
+
+						<button type="submit">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<ul class="list-cities my-ul">
+						<li><a href="#">Альметьевск</a></li>
+						<li><a href="#">Анапа</a></li>
+						<li><a href="#">Ангарск</a></li>
+						<li><a href="#">Армавир</a></li>
+						<li><a href="#">Архангельск</a></li>
+						<li><a href="#">Астрахань</a></li>
+						<li><a href="#">Альметьевск</a></li>
+						<li><a href="#">Анапа</a></li>
+						<li><a href="#">Ангарск</a></li>
+						<li><a href="#">Армавир</a></li>
+						<li><a href="#">Архангельск</a></li>
+						<li><a href="#">Астрахань</a></li>
+						<li><a href="#">Альметьевск</a></li>
+						<li><a href="#">Анапа</a></li>
+						<li><a href="#">Ангарск</a></li>
+						<li><a href="#">Армавир</a></li>
+						<li><a href="#">Архангельск</a></li>
+						<li><a href="#">Астрахань</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

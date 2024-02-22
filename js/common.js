@@ -1,10 +1,29 @@
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+// mobile
 $('.btn-burger').on('click', function (e) {
 	e.preventDefault();
 	$('.nav-menu').fadeToggle();
 });
 
+// animate scroll
+$('.go_to').click(function (e) {
+	e.preventDefault();
+	var scroll_el = $(this).attr('href');
+	if ($(scroll_el).length !== 0) {
+		$('html, body').animate({
+			scrollTop: $(scroll_el).offset().top
+		}, 500);
+	}
+	return false;
+});
+
+// search header
+$('.btn-search').on('click', function () {
+	$('.header-search-wrapper').fadeToggle();
+});
+
+// form search
 $('.form-search input').on('keyup change', function () {
 	if (this.value.length > 0) {
 		$(this).parents('.form-search').find('.input-clear').css('display', 'flex');
@@ -25,7 +44,7 @@ $('.form-search .input-clear').click(function () {
 	$(this).fadeOut();
 });
 
-// hidden list > 29
+// hidden list
 $('.list-category').each(function () {
 	if ($(this).find('.list-category__link').length > 29) {
 		$(this).find('.list-category__link').slice(29).hide();
@@ -60,3 +79,10 @@ $('.btn-toggle-services').on('click', function (e) {
 		$(this).hide();
 	}
 });
+
+
+// tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	return new bootstrap.Tooltip(tooltipTriggerEl)
+})

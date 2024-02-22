@@ -51,3 +51,91 @@ footer
 	font-size: 14px
 	line-height: 150%
 	color: $grey
+
+// modal
+.modal-backdrop
+	background: #141414
+	&.show
+		opacity: 0.2
+
+.modal-dialog
+	max-width: 936px
+	.btn-close
+		padding: 0
+		stroke: $grey
+		fill: none
+		border: none
+		border-radius: 0
+		background: transparent
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		opacity: 1
+		margin: 0
+		width: 24px
+		height: 24px
+		min-width: 24px
+		right: 16px
+		top: 16px
+		@include d-flex
+		&:hover
+			stroke: $accent
+
+.modal-content
+	padding: 40px
+	background: #fff
+	border-radius: 6px
+	border: none
+	position: relative
+
+.modal-header
+	padding: 0
+	border: none
+	border-radius: 0
+	width: 100%
+	margin: 0 0 32px
+
+.modal-title
+	width: 100%
+	margin: 0
+	text-align: left
+
+.modal-body
+	padding: 0
+	width: 100%
+	border: none
+
+.list-cities
+	width: 100%
+	column-count: 3
+	font-size: 14px
+	margin: 32px 0 0
+	li
+		margin: 0 0 16px
+		a
+			color: $black
+			&:hover
+				color: $accent
+			&:focus, &:active, &.active
+				color: #075CBF
+			&.disabled, &:disabled
+				color: $black
+				opacity: 0.5
+
+.form-search-modal
+	position: relative
+	label
+		width: 100%
+	[type='submit']
+		fill: none
+		stroke: $grey
+		width: 20px
+		height: 20px
+		@include d-flex
+		position: absolute
+		top: 14px
+		right: 20px
+		background: transparent
+		margin: 0
+		&:hover
+			stroke: $accent

@@ -4,6 +4,8 @@
 header
 	padding: 32px 0
 	background: #F3F6FA
+	position: relative
+	z-index: 2
 
 .btn-burger
 	display: none
@@ -56,3 +58,29 @@ header
 
 .phone
 	margin: 0 0 0 40px
+
+.btn-search
+	width: 20px
+	height: 20px
+	min-width: 20px
+	margin: 0 0 0 20px
+	display: none
+	align-items: center
+	justify-content: center
+	fill: none
+	stroke: $accent
+	&:hover
+		stroke: $accent-hover
+
+.header-search-wrapper
+	padding: 20px 0
+	border-top: 1px solid $accent
+	position: absolute
+	width: 100%
+	left: 0
+	top: 100%
+	background: #F3F6FA
+	z-index: 2
+	display: none
+	.form-search
+		margin: 0
