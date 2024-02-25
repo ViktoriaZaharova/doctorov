@@ -241,6 +241,7 @@ button, .btn
 	&:focus, &.active, &:active
 		background: $accent
 		color: #fff
+
 	&.disabled, &:disabled
 		opacity: 0.5
 		border: 1px solid $accent
@@ -256,6 +257,8 @@ button, .btn
 	&:focus, &.active, &:active
 		background: $accent
 		color: #fff
+		.btn-icon
+			stroke: #fff
 	&.disabled, &:disabled
 		opacity: 0.5
 		border: 1px solid $accent
@@ -279,6 +282,12 @@ button, .btn
 	min-width: 24px
 	@include d-flex
 	margin: 0 12px 0 0
+
+.btn-clear
+	width: 20px
+	height: 20px
+	min-width: 20px
+	margin: 0 0 0 12px
 
 .svg-icon
 	display: inline-block
@@ -401,27 +410,91 @@ a.color-accent
 	position: relative
 	display: flex
 	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
-
-.inp-check
-	display: none
-
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
+	color: $black
+	font-size: 16px
+	line-height: 150%
 	cursor: pointer
+	input
+		display: none
+		&:checked
+			+ .label-checkbox__custom
+				background: $accent
+				border-color: $accent
+				&::before
+					display: block
+	&__text
+		span
+			color: $grey
+			margin: 0 0 0 10px
+	&__custom
+		width: 18px
+		height: 18px
+		min-width: 18px
+		margin: 2px 13px 0 0
+		border: 1px solid #D2DAE1
+		border-radius: 2px
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 10px
+			height: 6px
+			background: url('../img/checked.svg') no-repeat center
+			background-size: 100%
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+.list-checkbox
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 32px 0 0
+		&:last-child
+			margin: 0
+
+.list-radio
+	li
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+
+.label-radio
+	display: flex
+	align-items: center
+	color: #7A859D
+	font-size: 14px
+	cursor: pointer
+	input
+		display: none
+		&:checked
+			+ .label-radio__custom
+				&::before
+					display: block
+	&__custom
+		margin: 0 13px 0 0
+		width: 18px
+		height: 18px
+		min-width: 18px
+		border-radius: 50%
+		border: 1px solid #D2DAE1
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			background: $accent
+			display: none
+			transition: .3s ease
 
 .label-radio-type
 	position: relative
@@ -614,3 +687,86 @@ a.color-accent
 
 .tooltip-arrow::before
 	display: none
+
+.datepicker
+	font-family: $default-font
+	.ui-widget
+		font-family: $default-font
+	.ui-widget.ui-widget-content
+		border: none
+		border-radius: 0
+		padding: 0
+		width: 100%
+		max-width: none
+	.ui-datepicker .ui-datepicker-header
+		padding: 0
+		border-radius: 0
+		border: none
+		background: transparent
+		width: 100%
+		margin: 0 0 24px
+		font-weight: 500
+		font-size: 24px
+		line-height: 130%
+		display: flex
+		align-items: center
+		justify-content: center
+	.ui-datepicker-year
+		display: none
+	.ui-datepicker .ui-datepicker-title
+		margin: 0 88px
+		line-height: 130%
+
+	.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+		position: relative
+		z-index: 1
+		width: 24px
+		height: 24px
+		min-width: 24px
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		cursor: pointer
+		border: none
+		border-radius: 0
+		@include d-flex
+		span
+			display: none
+	.ui-datepicker .ui-datepicker-prev
+		background: url('../img/left.svg') no-repeat center
+		background-size: 100%
+	.ui-datepicker .ui-datepicker-next
+		order: 1
+		background: url('../img/right.svg') no-repeat center
+		background-size: 100%
+	.ui-datepicker table
+		margin: 0
+		font-size: 14px
+		font-family: $default-font
+		line-height: 150%
+		font-weight: normal
+	.ui-datepicker th
+		font-weight: normal
+		font-size: 14px
+		padding: 0 0 20px
+		color: $grey
+	.ui-datepicker td
+		padding: 2px 0
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	border: 1px solid transparent
+	border-radius: 4px
+	margin: 0 auto
+	width: 36px
+	height: 32px
+	@include d-flex
+	text-align: center
+	background: transparent
+	color: $black
+	font-size: 14px
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background: #F4F7FC
+	border-color: $accent
+	color: $accent

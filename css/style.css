@@ -339,6 +339,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: #237AE0;
   color: #fff;
 }
+.btn-border-grey:focus .btn-icon, .btn-border-grey.active .btn-icon, .btn-border-grey:active .btn-icon {
+  stroke: #fff;
+}
 .btn-border-grey.disabled, .btn-border-grey:disabled {
   opacity: 0.5;
   border: 1px solid #237AE0;
@@ -374,6 +377,13 @@ button:hover, button:focus, .btn:hover, .btn:focus {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 12px 0 0;
+}
+
+.btn-clear {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 0 0 12px;
 }
 
 .svg-icon {
@@ -536,30 +546,114 @@ a.color-accent:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
-}
-
-.inp-check {
-  display: none;
-}
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  color: #141414;
+  font-size: 16px;
+  line-height: 150%;
   cursor: pointer;
 }
+.label-checkbox input {
+  display: none;
+}
+.label-checkbox input:checked + .label-checkbox__custom {
+  background: #237AE0;
+  border-color: #237AE0;
+}
+.label-checkbox input:checked + .label-checkbox__custom::before {
+  display: block;
+}
+.label-checkbox__text span {
+  color: #707D89;
+  margin: 0 0 0 10px;
+}
+.label-checkbox__custom {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin: 2px 13px 0 0;
+  border: 1px solid #D2DAE1;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+.label-checkbox__custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  height: 6px;
+  background: url("../img/checked.svg") no-repeat center;
+  background-size: 100%;
+}
 
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.list-checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list-checkbox li {
+  margin: 0 32px 0 0;
+}
+.list-checkbox li:last-child {
+  margin: 0;
+}
+
+.list-radio li {
+  margin: 0 0 16px;
+}
+.list-radio li:last-child {
+  margin: 0;
+}
+
+.label-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7A859D;
+  font-size: 14px;
+  cursor: pointer;
+}
+.label-radio input {
+  display: none;
+}
+.label-radio input:checked + .label-radio__custom::before {
+  display: block;
+}
+.label-radio__custom {
+  margin: 0 13px 0 0;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 50%;
+  border: 1px solid #D2DAE1;
+  position: relative;
+  z-index: 1;
+}
+.label-radio__custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #237AE0;
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .label-radio-type {
@@ -814,4 +908,125 @@ a.color-accent:hover {
 
 .tooltip-arrow::before {
   display: none;
+}
+
+.datepicker {
+  font-family: "Montserrat", sans-serif;
+}
+.datepicker .ui-widget {
+  font-family: "Montserrat", sans-serif;
+}
+.datepicker .ui-widget.ui-widget-content {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+.datepicker .ui-datepicker .ui-datepicker-header {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  width: 100%;
+  margin: 0 0 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.datepicker .ui-datepicker-year {
+  display: none;
+}
+.datepicker .ui-datepicker .ui-datepicker-title {
+  margin: 0 88px;
+  line-height: 130%;
+}
+.datepicker .ui-datepicker .ui-datepicker-prev, .datepicker .ui-datepicker .ui-datepicker-next {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.datepicker .ui-datepicker .ui-datepicker-prev span, .datepicker .ui-datepicker .ui-datepicker-next span {
+  display: none;
+}
+.datepicker .ui-datepicker .ui-datepicker-prev {
+  background: url("../img/left.svg") no-repeat center;
+  background-size: 100%;
+}
+.datepicker .ui-datepicker .ui-datepicker-next {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: url("../img/right.svg") no-repeat center;
+  background-size: 100%;
+}
+.datepicker .ui-datepicker table {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+  font-weight: normal;
+}
+.datepicker .ui-datepicker th {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 0 20px;
+  color: #707D89;
+}
+.datepicker .ui-datepicker td {
+  padding: 2px 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 36px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: transparent;
+  color: #141414;
+  font-size: 14px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: #F4F7FC;
+  border-color: #237AE0;
+  color: #237AE0;
 }
