@@ -108,7 +108,6 @@ footer .box-text p {
 }
 
 .modal-content {
-  padding: 40px;
   background: #fff;
   border-radius: 6px;
   border: none;
@@ -116,7 +115,7 @@ footer .box-text p {
 }
 
 .modal-header {
-  padding: 0;
+  padding: 40px 40px 0;
   border: none;
   border-radius: 0;
   width: 100%;
@@ -130,9 +129,27 @@ footer .box-text p {
 }
 
 .modal-body {
-  padding: 0;
+  padding: 0 40px 40px;
   width: 100%;
   border: none;
+}
+
+.modal-footer {
+  border: none;
+  padding: 40px;
+  background: #F3F6FA;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.modal-footer > * {
+  margin: 0;
+}
+.modal-footer .doctor-phone {
+  font-size: 24px;
+}
+.modal-footer .doctors-card-item__title {
+  font-size: 14px;
 }
 
 .list-cities {
@@ -164,6 +181,7 @@ footer .box-text p {
   position: relative;
 }
 .form-search-modal label {
+  margin: 0;
   width: 100%;
 }
 .form-search-modal [type=submit] {
@@ -207,4 +225,35 @@ footer .box-text p {
 }
 .form-area-box h3 {
   margin: 0 0 24px;
+}
+
+.consent {
+  margin: 16px 0 24px;
+  font-size: 14px;
+}
+
+.information-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 32px 0 0;
+  color: #707D89;
+  font-size: 14px;
+  line-height: 150%;
+}
+.information-call__icon {
+  width: 20px;
+  min-width: 20px;
+  margin: 2px 12px 0 0;
+}
+
+.form-callback {
+  margin: 24px 0 0;
+}
+
+#callModal .modal-dialog {
+  max-width: 520px;
 }

@@ -197,6 +197,9 @@
       flex-wrap: wrap;
   font-size: 14px;
 }
+.filter-wrapper .btn-group {
+  margin: 0 0 0 auto;
+}
 
 .filter-box {
   display: -webkit-box;
@@ -212,10 +215,6 @@
 .filter-box p {
   margin: 0 16px 0 0;
   color: #707D89;
-}
-
-.btn-medicine {
-  margin: 0 auto 0 0;
 }
 
 .page-header {
@@ -238,15 +237,19 @@
   border-radius: 6px;
   position: relative;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 14px;
+  line-height: 150%;
+}
+.doctors-card:nth-child(-n+5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .doctors-card:last-child {
   margin: 0;
@@ -315,6 +318,14 @@
 .doctors-card__footer .doctors-card-item-time {
   margin: 0 0 8px;
 }
+.doctors-card__description {
+  max-height: 63px;
+  overflow: hidden;
+}
+.doctors-card__description.open {
+  max-height: none;
+  overflow: visible;
+}
 
 .add-favorite {
   width: 38px;
@@ -382,6 +393,9 @@
 }
 .list-rating li:last-child {
   margin: 0;
+}
+.list-rating li.star-0 {
+  fill: #D2DAE1;
 }
 
 .doctor-name {
@@ -607,4 +621,171 @@
 .result-search-doctors span {
   color: #707D89;
   font-size: 14px;
+}
+
+.clinic-card {
+  min-height: 384px;
+}
+.clinic-card .doctors-card__photo-avatar {
+  border-radius: 8px;
+}
+.clinic-card .addres-item {
+  margin: 0 0 8px;
+}
+.clinic-card .doctors-card-address {
+  margin: auto 0 0;
+}
+
+.btn-toggle-text {
+  margin: 16px 0 0;
+}
+.btn-toggle-text.active .link-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.list-schedule {
+  width: 100%;
+}
+.list-schedule li {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 8px;
+}
+.list-schedule li:last-child {
+  margin: 0;
+}
+.list-schedule li::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #D2DAE1;
+}
+.list-schedule span {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 0 0 0 12px;
+  display: inline-block;
+  color: #237AE0;
+}
+.list-schedule p {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 0 12px 0 0;
+}
+
+.reviews {
+  margin: 0 0 88px;
+}
+.reviews h2 {
+  text-align: left;
+  margin: 0 0 24px;
+}
+
+.reviews-slider .slick-slide {
+  padding: 0 12px;
+  height: auto;
+}
+.reviews-slider .slick-list {
+  margin: 0 -12px;
+}
+.reviews-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.reviews-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 24px;
+}
+.reviews-box .rating-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reviews-box .list-rating {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 16px 0 0;
+}
+.reviews-box .rating-value {
+  margin: 0;
+}
+.reviews-box__body {
+  margin: 16px 0;
+}
+.reviews-box__body .box-text {
+  color: #707D89;
+}
+.reviews-box__body .date {
+  margin: 24px 0 0;
+  color: #707D89;
+}
+.reviews-box__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 24px 0 0;
+}
+.reviews-box__avatar {
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #D2DAE1;
+  overflow: hidden;
+}
+.reviews-box__clinic {
+  color: #141414;
+  font-weight: 500;
+  font-size: 16px;
+  width: calc(100% - 64px);
+  padding: 0 0 0 24px;
+}
+.reviews-box__clinic:hover {
+  color: #237AE0;
 }

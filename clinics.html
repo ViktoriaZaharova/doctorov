@@ -134,8 +134,8 @@
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-								<li class="breadcrumb-item"><a href="doctors.html">Врачи</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Кардиологи</li>
+								<li class="breadcrumb-item"><a href="clinics.html">Клинки</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Нефрологический комплекс</li>
 							</ol>
 						</nav>
 					</div>
@@ -167,43 +167,24 @@
 							</button>
 						</form>
 
-						<h1 class="h2 search-doctors-result">Кардиологи Москвы <span>2 877 врачей</span></h1>
+						<h1 class="h2 search-doctors-result">Нефрологический комплекс в Москве<span>20 клиник</span></h1>
 
 						<div class="filter-wrapper">
-							<div class="filter-box">
-								<p>Тип приема</p>
-								<label class="label-radio-type">
-									<input type="radio" name="radio-type" checked>
-									<span class="label-radio-type__text">В клинике</span>
-								</label>
-								<label class="label-radio-type">
-									<input type="radio" name="radio-type">
-									<span class="label-radio-type__text">На дому</span>
-								</label>
-							</div>
-
-							<a href="#" class="btn btn-sm btn-border btn-border-grey btn-medicine">
+							<a href="#" class="btn btn-sm btn-border btn-border-grey" data-bs-toggle="modal"
+								data-bs-target="#areaModal">
 								<span class="btn-icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#plus"></use>
+										<use xlink:href="img/sprite.svg#location"></use>
 									</svg></span>
-								<span class="btn-text">Доказательная медицина</span>
+								<span class="btn-text">Район</span>
 							</a>
 
 							<div class="btn-group">
-								<a href="#" class="btn btn-sm btn-border btn-border-grey" data-bs-toggle="modal"
-									data-bs-target="#areaModal">
-									<span class="btn-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#location"></use>
-										</svg></span>
-									<span class="btn-text">Район</span>
-								</a>
-								<a href="#" class="btn btn-sm btn-border btn-border-grey" data-bs-toggle="modal"
-									data-bs-target="#dateModal">
-									<span class="btn-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#calendar"></use>
-										</svg></span>
-									<span class="btn-text">Дата приема</span>
-								</a>
+								<select name="select" class="select-my">
+									<option value="Популярные">Популярные</option>
+									<option value="Дешевые">Дешевые</option>
+									<option value="Дорогие">Дорогие</option>
+									<option value="По алфавиту">По алфавиту</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -215,16 +196,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="doctors-card">
+						<div class="doctors-card clinic-card">
 							<div class="doctors-card__body">
 								<div class="doctors-card__head">
 									<div class="doctors-card__photo">
-										<a href="doctor-page.html" class="doctors-card__photo-avatar">
-											<img src="img/doc.png" alt="">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
 										</a>
-										<a href="#" class="add-favorite"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#favorite"></use>
-											</svg></a>
 
 										<div class="rating-wrapper">
 											<ul class="list-rating my-ul">
@@ -248,134 +226,32 @@
 										</div>
 									</div>
 									<div class="doctors-card__name">
-										<div class="doctor-name h4">Бахарева Нелли Викторовна</div>
-										<div class="doctor-position">Кардиолог</div>
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
 									</div>
 								</div>
 
-								<div class="doctors-card-item">
-									<ul class="doctor-information my-ul">
-										<li>Стаж 43 года</li>
-										<li>Врач высшей категории</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item reception-type">
-									<div class="doctors-card-item__title">Тип приема</div>
-									<div class="reception-type-wrapper">
-										<div class="reception-type-box active">
-											<p>В клинике</p>
-											<div class="price-wrapper">
-												<div class="price">от 2 000 ₽</div>
-											</div>
-										</div>
-										<div class="reception-type-box">
-											<p>На дому</p>
-											<div class="price-wrapper">
-												<div class="price">от 3 000 ₽</div>
-											</div>
-										</div>
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
 									</div>
 								</div>
-								<div class="doctors-card-item appointment-box">
-									<div class="appointment-box-wrapper">
-										<div class="doctors-card-item__title">Запись на прием</div>
-										<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-									</div>
-									<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Доказательная медицина</span>
-										<span class="tooltip-btn" data-bs-toggle="tooltip"
-											title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
-												src="img/info.svg" alt=""></span>
-									</a>
-								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
 							</div>
 							<div class="doctors-card__footer">
 								<div class="doctors-card-item">
-									<div class="doctors-card-item__title">Время приема</div>
-									<ul class="time-list time-list-date my-ul">
-										<li>
-											<a href="#" class="time-list-item">
-												<p>Пн,</p>
-												<span>22.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item active">
-												<p>Вт,</p>
-												<span>23.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<p>Ср,</p>
-												<span>22.01</span>
-											</a>
-										</li>
-									</ul>
-
-									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#calendarModal">Другие
-										дни</a>
-								</div>
-								<div class="doctors-card-item doctors-card-item-time">
-									<ul class="time-list my-ul">
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>10:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>11:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>11:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>12:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>12:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>15:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>17:00</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item doctors-card-address">
-									<p>Московский доктор в Чертаново</p>
 									<div class="addres-item">
 										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
 									</div>
-								</div>
-
-								<div class="doctors-card-item">
 									<div class="list-address">
 										<div class="list-address-item">
 											<p>Чертановская</p>
@@ -390,20 +266,40 @@
 											<span>150 м</span>
 										</div>
 									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
 								</div>
 							</div>
 						</div>
 
-						<div class="doctors-card">
+						<div class="doctors-card clinic-card">
 							<div class="doctors-card__body">
 								<div class="doctors-card__head">
 									<div class="doctors-card__photo">
-										<a href="doctor-page.html" class="doctors-card__photo-avatar">
-											<img src="img/doc.png" alt="">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
 										</a>
-										<a href="#" class="add-favorite"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#favorite"></use>
-											</svg></a>
 
 										<div class="rating-wrapper">
 											<ul class="list-rating my-ul">
@@ -427,73 +323,32 @@
 										</div>
 									</div>
 									<div class="doctors-card__name">
-										<div class="doctor-name h4">Бахарева Нелли Викторовна</div>
-										<div class="doctor-position">Кардиолог</div>
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
 									</div>
 								</div>
 
-								<div class="doctors-card-item">
-									<ul class="doctor-information my-ul">
-										<li>Стаж 43 года</li>
-										<li>Врач высшей категории</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item reception-type">
-									<div class="doctors-card-item__title">Тип приема</div>
-									<div class="reception-type-wrapper">
-										<div class="reception-type-box">
-											<p>В клинике</p>
-											<div class="price-wrapper">
-												<div class="price">от 2 000 ₽</div>
-											</div>
-										</div>
-										<div class="reception-type-box active">
-											<p>На дому</p>
-											<div class="price-wrapper">
-												<div class="price">от 3 000 ₽</div>
-											</div>
-										</div>
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
 									</div>
 								</div>
-								<div class="doctors-card-item appointment-box">
-									<div class="appointment-box-wrapper">
-										<div class="doctors-card-item__title">Запись на прием</div>
-										<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-									</div>
-									<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Доказательная медицина</span>
-										<span class="tooltip-btn" data-bs-toggle="tooltip"
-											title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
-												src="img/info.svg" alt=""></span>
-									</a>
-								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
 							</div>
 							<div class="doctors-card__footer">
 								<div class="doctors-card-item">
-									<div class="doctors-card-item__title">Стоимость выезда врача на дом зависит от места проживания.
-										Точную стоимость мы вам сообщим после заполнения заявки</div>
-								</div>
-
-								<div class="doctors-card-item">
-									<a href="#" class="btn btn-accent w-100 btn-call-doctors">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Вызвать врача на дом</span>
-									</a>
-								</div>
-
-								<div class="doctors-card-item doctors-card-address">
-									<p>Московский доктор в Чертаново</p>
 									<div class="addres-item">
 										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
 									</div>
-								</div>
-
-								<div class="doctors-card-item">
 									<div class="list-address">
 										<div class="list-address-item">
 											<p>Чертановская</p>
@@ -508,20 +363,39 @@
 											<span>150 м</span>
 										</div>
 									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
 								</div>
 							</div>
 						</div>
-
-						<div class="doctors-card">
+						<div class="doctors-card clinic-card">
 							<div class="doctors-card__body">
 								<div class="doctors-card__head">
 									<div class="doctors-card__photo">
-										<a href="doctor-page.html" class="doctors-card__photo-avatar">
-											<img src="img/doc.png" alt="">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
 										</a>
-										<a href="#" class="add-favorite"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#favorite"></use>
-											</svg></a>
 
 										<div class="rating-wrapper">
 											<ul class="list-rating my-ul">
@@ -545,142 +419,32 @@
 										</div>
 									</div>
 									<div class="doctors-card__name">
-										<div class="doctor-name h4">Бахарева Нелли Викторовна</div>
-										<div class="doctor-position">Кардиолог</div>
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
 									</div>
 								</div>
 
-								<div class="doctors-card-item">
-									<ul class="doctor-information my-ul">
-										<li>Стаж 43 года</li>
-										<li>Врач высшей категории</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item reception-type">
-									<div class="doctors-card-item__title">Тип приема</div>
-									<div class="reception-type-wrapper">
-										<div class="reception-type-box active">
-											<p>В клинике</p>
-											<div class="price-wrapper">
-												<div class="price">от 2 000 ₽</div>
-											</div>
-										</div>
-										<div class="reception-type-box">
-											<p>На дому</p>
-											<div class="price-wrapper">
-												<div class="price">от 3 000 ₽</div>
-											</div>
-										</div>
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
 									</div>
 								</div>
-								<div class="doctors-card-item appointment-box">
-									<div class="appointment-box-wrapper">
-										<div class="doctors-card-item__title">Запись на прием</div>
-										<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-									</div>
-									<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Доказательная медицина</span>
-										<span class="tooltip-btn" data-bs-toggle="tooltip"
-											title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
-												src="img/info.svg" alt=""></span>
-									</a>
-								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
 							</div>
 							<div class="doctors-card__footer">
 								<div class="doctors-card-item">
-									<div class="doctors-card-item__title">Время приема</div>
-									<ul class="time-list time-list-date my-ul">
-										<li>
-											<a href="#" class="time-list-item">
-												<p>Пн,</p>
-												<span>22.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item active">
-												<p>Вт,</p>
-												<span>23.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<p>Ср,</p>
-												<span>22.01</span>
-											</a>
-										</li>
-									</ul>
-
-									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#calendarModal">Другие
-										дни</a>
-								</div>
-								<div class="doctors-card-item doctors-card-item-time">
-									<ul class="time-list my-ul">
-										<li>
-											<a href="#" class="time-list-item">
-												<span>10:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>11:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>11:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>12:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>12:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>15:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>17:00</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item">
-									<div class="doctors-card-item__title">Врач принимает в нескольких клиниках</div>
-									<select name="select" class="select-my">
-										<option value="Московский доктор в Чертаново">Московский доктор в Чертаново</option>
-										<option value="Московский доктор в Чертаново">Московский доктор в Чертаново</option>
-										<option value="Московский доктор в Чертаново">Московский доктор в Чертаново</option>
-									</select>
-								</div>
-								<div class="doctors-card-item doctors-card-address">
-									<p>Московский доктор в Чертаново</p>
 									<div class="addres-item">
 										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
 									</div>
-								</div>
-
-								<div class="doctors-card-item">
 									<div class="list-address">
 										<div class="list-address-item">
 											<p>Чертановская</p>
@@ -695,20 +459,39 @@
 											<span>150 м</span>
 										</div>
 									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
 								</div>
 							</div>
 						</div>
-
-						<div class="doctors-card">
+						<div class="doctors-card clinic-card">
 							<div class="doctors-card__body">
 								<div class="doctors-card__head">
 									<div class="doctors-card__photo">
-										<a href="doctor-page.html" class="doctors-card__photo-avatar">
-											<img src="img/doc.png" alt="">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
 										</a>
-										<a href="#" class="add-favorite"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#favorite"></use>
-											</svg></a>
 
 										<div class="rating-wrapper">
 											<ul class="list-rating my-ul">
@@ -732,67 +515,32 @@
 										</div>
 									</div>
 									<div class="doctors-card__name">
-										<div class="doctor-name h4">Бахарева Нелли Викторовна</div>
-										<div class="doctor-position">Кардиолог</div>
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
 									</div>
 								</div>
 
-								<div class="doctors-card-item">
-									<ul class="doctor-information my-ul">
-										<li>Стаж 43 года</li>
-										<li>Врач высшей категории</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item reception-type">
-									<div class="doctors-card-item__title">Тип приема</div>
-									<div class="reception-type-wrapper">
-										<div class="reception-type-box active">
-											<p>В клинике</p>
-											<div class="price-wrapper">
-												<div class="price">от 2 000 ₽</div>
-											</div>
-										</div>
-										<div class="reception-type-box">
-											<p>На дому</p>
-											<div class="price-wrapper">
-												<div class="price">от 3 000 ₽</div>
-											</div>
-										</div>
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
 									</div>
 								</div>
-								<div class="doctors-card-item appointment-box">
-									<div class="appointment-box-wrapper">
-										<div class="doctors-card-item__title">Запись на прием</div>
-										<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-									</div>
-									<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Доказательная медицина</span>
-										<span class="tooltip-btn" data-bs-toggle="tooltip"
-											title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
-												src="img/info.svg" alt=""></span>
-									</a>
-								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
 							</div>
 							<div class="doctors-card__footer">
 								<div class="doctors-card-item">
-									<div class="doctors-card-item__title">Нет свободных дат</div>
-								</div>
-								<div class="doctors-card-item">
-									<a href="#" class="btn btn-accent w-100">
-										<span class="btn-text">Запись на прием</span>
-									</a>
-								</div>
-								<div class="doctors-card-item doctors-card-address">
-									<p>Московский доктор в Чертаново</p>
 									<div class="addres-item">
 										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
 									</div>
-								</div>
-
-								<div class="doctors-card-item">
 									<div class="list-address">
 										<div class="list-address-item">
 											<p>Чертановская</p>
@@ -807,20 +555,39 @@
 											<span>150 м</span>
 										</div>
 									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
 								</div>
 							</div>
 						</div>
-
-						<div class="doctors-card">
+						<div class="doctors-card clinic-card">
 							<div class="doctors-card__body">
 								<div class="doctors-card__head">
 									<div class="doctors-card__photo">
-										<a href="doctor-page.html" class="doctors-card__photo-avatar">
-											<img src="img/doc.png" alt="">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
 										</a>
-										<a href="#" class="add-favorite"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#favorite"></use>
-											</svg></a>
 
 										<div class="rating-wrapper">
 											<ul class="list-rating my-ul">
@@ -844,114 +611,32 @@
 										</div>
 									</div>
 									<div class="doctors-card__name">
-										<div class="doctor-name h4">Бахарева Нелли Викторовна</div>
-										<div class="doctor-position">Кардиолог</div>
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
 									</div>
 								</div>
 
-								<div class="doctors-card-item">
-									<ul class="doctor-information my-ul">
-										<li>Стаж 43 года</li>
-										<li>Врач высшей категории</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item reception-type">
-									<div class="doctors-card-item__title">Тип приема</div>
-									<div class="reception-type-wrapper">
-										<div class="reception-type-box active">
-											<p>В клинике</p>
-											<div class="price-wrapper">
-												<div class="price">от 2 000 ₽</div>
-											</div>
-										</div>
-										<div class="reception-type-box">
-											<p>На дому</p>
-											<div class="price-wrapper">
-												<div class="price">от 3 000 ₽</div>
-											</div>
-										</div>
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
 									</div>
 								</div>
-								<div class="doctors-card-item appointment-box">
-									<div class="appointment-box-wrapper">
-										<div class="doctors-card-item__title">Запись на прием</div>
-										<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-									</div>
-									<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
-										<span class="btn-icon"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#plus"></use>
-											</svg></span>
-										<span class="btn-text">Доказательная медицина</span>
-										<span class="tooltip-btn" data-bs-toggle="tooltip"
-											title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
-												src="img/info.svg" alt=""></span>
-									</a>
-								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
 							</div>
 							<div class="doctors-card__footer">
 								<div class="doctors-card-item">
-									<div class="doctors-card-item__title h4 color-black">Запись к этому врачу сейчас не ведется</div>
-									<div class="box-text color-grey">
-										<p>Пожалуйста, выберите другого врача</p>
-									</div>
-								</div>
-								<div class="doctors-card-item doctors-card-item-time">
-									<ul class="time-list my-ul">
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>10:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>11:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>11:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item no-active">
-												<span>12:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>12:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>15:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:00</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>16:30</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="time-list-item">
-												<span>17:00</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="doctors-card-item doctors-card-address">
-									<p>Московский доктор в Чертаново</p>
 									<div class="addres-item">
 										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
 									</div>
-								</div>
-
-								<div class="doctors-card-item">
 									<div class="list-address">
 										<div class="list-address-item">
 											<p>Чертановская</p>
@@ -966,6 +651,221 @@
 											<span>150 м</span>
 										</div>
 									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
+								</div>
+							</div>
+						</div>
+						<div class="doctors-card clinic-card">
+							<div class="doctors-card__body">
+								<div class="doctors-card__head">
+									<div class="doctors-card__photo">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
+										</a>
+
+										<div class="rating-wrapper">
+											<ul class="list-rating my-ul">
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+											</ul>
+											<a href="#" class="color-accent rating-value">82 отзыва</a>
+										</div>
+									</div>
+									<div class="doctors-card__name">
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
+									</div>
+								</div>
+
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
+									</div>
+								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
+							</div>
+							<div class="doctors-card__footer">
+								<div class="doctors-card-item">
+									<div class="addres-item">
+										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
+									</div>
+									<div class="list-address">
+										<div class="list-address-item">
+											<p>Чертановская</p>
+											<span>150 м</span>
+										</div>
+										<div class="list-address-item active">
+											<p>Варшавская</p>
+											<span>150 м</span>
+										</div>
+										<div class="list-address-item">
+											<p>Южная</p>
+											<span>150 м</span>
+										</div>
+									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
+								</div>
+							</div>
+						</div>
+						<div class="doctors-card clinic-card">
+							<div class="doctors-card__body">
+								<div class="doctors-card__head">
+									<div class="doctors-card__photo">
+										<a href="clinic-page.html" class="doctors-card__photo-avatar">
+											<img src="img/clinic.jpg" alt="">
+										</a>
+
+										<div class="rating-wrapper">
+											<ul class="list-rating my-ul">
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg></li>
+											</ul>
+											<a href="#" class="color-accent rating-value">82 отзыва</a>
+										</div>
+									</div>
+									<div class="doctors-card__name">
+										<div class="doctor-name h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+										<div class="doctor-position">Многопрофильный медицинский центр</div>
+									</div>
+								</div>
+
+								<div class="doctors-card__description">
+									<div class="box-text">
+										<p>Клиника неврологии и ортопедии ЗдравКлиник — это клиника мануальной терапии, основным
+											направлением деятельности которой
+											является лечение позвоночника.</p>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo animi accusantium
+											voluptatum aperiam quam repudiandae consectetur neque distinctio ea?</p>
+									</div>
+								</div>
+								<a href="#" class="btn-toggle-text link-accent">
+									<span class="link-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg></span>
+									<span class="link-text">Подробнее</span>
+								</a>
+							</div>
+							<div class="doctors-card__footer">
+								<div class="doctors-card-item">
+									<div class="addres-item">
+										<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
+									</div>
+									<div class="list-address">
+										<div class="list-address-item">
+											<p>Чертановская</p>
+											<span>150 м</span>
+										</div>
+										<div class="list-address-item active">
+											<p>Варшавская</p>
+											<span>150 м</span>
+										</div>
+										<div class="list-address-item">
+											<p>Южная</p>
+											<span>150 м</span>
+										</div>
+									</div>
+								</div>
+								<div class="doctors-card-item">
+									<ul class="list-schedule my-ul">
+										<li>
+											<p>Пн-Пт</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Сб</p>
+											<span>9:00 - 21:00</span>
+										</li>
+										<li>
+											<p>Вс</p>
+											<span>9:00 - 21:00</span>
+										</li>
+									</ul>
+								</div>
+								<div class="doctors-card-item">
+									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+								</div>
+								<div class="doctors-card-address">
+									<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
+										в клинику</a>
 								</div>
 							</div>
 						</div>
@@ -998,6 +898,266 @@
 								</li>
 							</ul>
 						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Отзывы о лечебных учреждениях в <span class="color-accent">Москве</span></h2>
+				</div>
+				<div class="col-12">
+					<div class="reviews-slider">
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box">
+								<div class="reviews-box__head">
+									<div class="reviews-box__name h4">Валентина</div>
+									<div class="rating-wrapper">
+										<ul class="list-rating my-ul">
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+											<li class="star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg></li>
+										</ul>
+										<span class="color-grey rating-value">Хорошо</span>
+									</div>
+								</div>
+								<div class="reviews-box__body">
+									<div class="h5">Комментарий</div>
+									<div class="box-text">
+										<p>Врача я вызывала на дом для мужа. Доктор внимательно осмотрела пациента, приняла решение, как ему
+											помочь, и выписала
+											рецепты. Прежде всего, чувствуется, что врач опытный.</p>
+									</div>
+									<div class="date">23 января 2024</div>
+								</div>
+								<div class="reviews-box__footer">
+									<a href="clinic-page.html" class="reviews-box__avatar"><img src="img/clinic.jpg" alt=""></a>
+									<a href="clinic-page.html" class="reviews-box__clinic">Клиника неврологии и ортопедии ЗдравКлиник в
+										Марьино</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1249,6 +1409,56 @@
 						</button>
 					</form>
 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+				</button>
+				<div class="modal-header">
+					<div class="modal-title h2">Записаться в клинику</div>
+				</div>
+				<div class="modal-body">
+					<div class="h4">Клиника неврологии и ортопедии ЗдравКлиник в Марьино</div>
+					<form method="post" class="form-callback">
+						<label>
+							<input type="text" name="name" required>
+							<span class="input-text">Имя</span>
+						</label>
+
+						<label>
+							<input type="text" name="phone" required>
+							<span class="input-text">Телефон</span>
+						</label>
+
+						<div class="consent">Нажимая на "Записаться", вы даете согласие на <a href="#"
+								class="d-inline color-accent">обработку персональных данных</a></div>
+
+						<button type="submit" class="btn btn-accent btn-search-submit">
+							<span class="btn-text">Записаться</span>
+						</button>
+
+						<div class="information-call">
+							<div class="information-call__icon"><img src="img/info-blue.svg" alt=""></div>
+							<div class="information-call__text">
+								<p>После записи с Вами свяжется специалист call-центра и уточнит все интересующие Вас вопросы.</p>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<div class="appointment-box-wrapper">
+						<div class="doctors-card-item__title">Или по телефону</div>
+						<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
+					</div>
 				</div>
 			</div>
 		</div>

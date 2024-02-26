@@ -80,6 +80,43 @@ $('.btn-toggle-services').on('click', function (e) {
 	}
 });
 
+$('.btn-toggle-card').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.row').find('.doctors-card:hidden').slice(0, 10).css('display', 'flex');
+	var onBlock = $(this).parents('.row').find('.doctors-card:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
+
+
+$('.btn-toggle-text').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents('.doctors-card').find('.doctors-card__description');
+
+
+	if (!$this.hasClass('active')) {
+		$this.addClass('active');
+		$this.find('.link-text').html('Скрыть');
+		content.addClass('open');
+	} else {
+		$this.removeClass('active');
+		$this.find('.link-text').html('Подробнее');
+
+		content.removeClass('open');
+	}
+});
+
+// sliders
+$('.reviews-slider').slick({
+	slidesToShow: 2,
+	dots: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
 
 // tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -109,7 +146,7 @@ $(function () {
 			showMonthAfterYear: false,
 			yearSuffix: ''
 		});
-	
+
 });
 $(function () {
 	$(".datepicker1").datepicker();

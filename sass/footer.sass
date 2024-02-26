@@ -82,14 +82,13 @@ footer
 			stroke: $accent
 
 .modal-content
-	padding: 40px
 	background: #fff
 	border-radius: 6px
 	border: none
 	position: relative
 
 .modal-header
-	padding: 0
+	padding: 40px 40px 0
 	border: none
 	border-radius: 0
 	width: 100%
@@ -101,9 +100,21 @@ footer
 	text-align: left
 
 .modal-body
-	padding: 0
+	padding: 0 40px 40px
 	width: 100%
 	border: none
+
+.modal-footer
+	border: none
+	padding: 40px
+	background: #F3F6FA
+	justify-content: flex-start
+	>*
+		margin: 0
+	.doctor-phone
+		font-size: 24px
+	.doctors-card-item__title
+		font-size: 14px
 
 .list-cities
 	width: 100%
@@ -125,6 +136,7 @@ footer
 .form-search-modal
 	position: relative
 	label
+		margin: 0
 		width: 100%
 	[type='submit']
 		fill: none
@@ -156,3 +168,26 @@ footer
 	margin: 32px 0 0
 	h3
 		margin: 0 0 24px
+
+.consent
+	margin: 16px 0 24px
+	font-size: 14px
+
+.information-call
+	display: flex
+	align-items: flex-start
+	margin: 32px 0 0
+	color: $grey
+	font-size: 14px
+	line-height: 150%
+	&__icon
+		width: 20px
+		min-width: 20px
+		margin: 2px 12px 0 0
+
+.form-callback
+	margin: 24px 0 0
+
+#callModal
+	.modal-dialog
+		max-width: 520px

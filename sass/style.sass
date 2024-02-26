@@ -119,6 +119,7 @@ input[type="radio"], input[type="checkbox"]
 	white-space: nowrap
 	overflow: hidden
 	text-overflow: ellipsis
+	line-height: normal
 
 .input-clear
 	align-items: center
@@ -145,7 +146,7 @@ input[type="radio"], input[type="checkbox"]
 	background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
 	background-size: 20px
 	color: $black
-	padding: 0 40px 0 20px
+	padding: 0 56px 0 20px
 	height: 45px
 	&:hover
 		background: #fff url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
@@ -329,12 +330,14 @@ h1, .h1
 	margin: 0 auto 16px
 	text-align: center
 	font-size: 40px
+	line-height: normal
 	font-weight: 500
 
 h2, .h2
 	text-align: center
 	width: 100%
 	font-size: 32px
+	line-height: normal
 	font-weight: 500
 	margin: 0 auto 16px
 
@@ -343,12 +346,28 @@ h3, .h3
 	font-weight: 500
 	margin: 0 0 8px
 	font-size: 24px
+	line-height: normal
 
 h4, .h4
 	width: 100%
 	font-size: 18px
+	line-height: 150%
 	font-weight: 500
 	margin: 0 0 16px
+
+h5, .h5
+	font-size: 16px
+	line-height: normal
+	font-weight: 500
+	margin: 0 0 8px
+	width: 100%
+
+h6, .h6
+	width: 100%
+	margin: 0 0 8px
+	line-height: normal
+	font-size: 14px
+	font-weight: 500
 
 .subtitle-text
 	width: 100%
@@ -399,12 +418,85 @@ a.color-accent
 .bg-white
 	background: #fff
 
+.font-500
+	font-weight: 500
+
+.link-accent
+	display: flex
+	align-items: center
+	font-weight: 500
+	font-size: 14px
+	color: $accent
+	.link-icon
+		stroke: $accent
+	&:hover
+		color: #1368CC
+		.link-icon
+			stroke: #1368CC
+	&:focus, &:active, &.active
+		color: #075CBF
+		.link-icon
+			stroke: #075CBF
+	&.disabled, &:disabled
+		color: $accent
+		opacity: 0.5
+		.link-icon
+			stroke: $accent
+
 .slick-slider
 	width: 100%
 
 .slick-slide
 	outline: none
 
+.slick-dots
+	@include d-flex
+	position: relative
+	z-index: 1
+	opacity: 1
+	bottom: 0
+	width: 100%
+	margin: 24px auto 0
+	list-style: none
+	li
+		cursor: pointer
+		width: 6px
+		height: 6px
+		border-radius: 50%
+		transition: .3s ease
+		background: #D2DAE1
+		margin: 0 8px
+		button
+			display: none
+		&.slick-active
+			background: $accent
+			width: 10px
+			height: 10px
+
+.slick-arrow
+	position: absolute
+	z-index: 2
+	top: 50%
+	transform: translate(0,-50%)
+	opacity: 1
+	outline: none
+	width: 48px
+	height: 48px
+	background: #fff
+	border-radius: 50%
+	@include d-flex
+	padding: 12px
+	fill: none
+	stroke: $black
+	&:hover
+		background: $accent
+		stroke: #fff
+
+.slick-prev
+	left: -72px
+
+.slick-next
+	right: -72px
 //checkbox my
 .label-checkbox
 	position: relative
