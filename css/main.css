@@ -400,6 +400,10 @@
 
 .doctor-name {
   margin: 0 0 8px;
+  color: #141414;
+}
+.doctor-name:hover {
+  color: #237AE0;
 }
 
 .doctor-position {
@@ -788,4 +792,234 @@
 }
 .reviews-box__clinic:hover {
   color: #237AE0;
+}
+.reviews-box__content {
+  width: calc(100% - 56px);
+  padding: 0 0 0 16px;
+}
+.reviews-box__user {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  background: #D2DAE1;
+  color: #707D89;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.reviews-box__name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 8px;
+}
+
+.status-visit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 auto;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: normal;
+  background: rgba(35, 122, 224, 0.06);
+  border-radius: 80px;
+}
+.status-visit img {
+  margin: 0 8px 0 0;
+  width: 20px;
+  min-width: 20px;
+}
+
+.reviews-box-my {
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+.reviews-box-my:last-child {
+  margin: 0;
+}
+.reviews-box-my:nth-child(-n+3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.reviews-filter .select-my {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+}
+
+.reviews-filter-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.reviews-filter-rating__val {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 16px;
+}
+.reviews-filter-rating__val svg {
+  fill: #237AE0;
+  margin: 0 8px 0 0;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
+
+.doctocs-section {
+  margin: 0 0 88px;
+}
+.doctocs-section h2 {
+  text-align: left;
+  max-width: 936px;
+  margin: 0 0 16px;
+}
+.doctocs-section .doctors-card {
+  display: none;
+}
+.doctocs-section .doctors-card:nth-child(-n+3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prices-category {
+  margin: 32px 0 0;
+}
+
+.prices-box {
+  width: 100%;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin: 0 0 24px;
+  display: none;
+}
+.prices-box:nth-child(-n+2) {
+  display: block;
+}
+
+.list-price {
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+  color: #707D89;
+}
+.list-price li {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  margin: 0 0 12px;
+}
+.list-price li:last-child {
+  margin: 0;
+}
+.list-price li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #D2DAE1;
+  z-index: -1;
+}
+.list-price li p, .list-price li span {
+  position: relative;
+  background: #fff;
+  display: inline-block;
+}
+.list-price li p {
+  padding: 0 10px 0 0;
+}
+.list-price li span {
+  color: #237AE0;
+  padding: 0 0 0 10px;
+}
+
+.certificates-slider .slide {
+  padding: 0 12px;
+}
+.certificates-slider .slick-list {
+  margin: 0 -12px;
+}
+
+.certificates-item {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  background: #fff;
+}
+.certificates-item img {
+  width: 100%;
 }

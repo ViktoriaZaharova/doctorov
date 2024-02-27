@@ -143,23 +143,23 @@ input[type="radio"], input[type="checkbox"]
 		opacity: 0.5
 
 .select-my
-	background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
+	background: transparent url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
 	background-size: 20px
 	color: $black
 	padding: 0 56px 0 20px
 	height: 45px
 	&:hover
-		background: #fff url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
+		background: transparent url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
 		background-size: 20px
 		color: $black
 	&:focus, &.active, &:active
 		border-color: $accent
-		background: #fff url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
+		background: transparent url('../img/arrow-select-blue.svg') no-repeat calc(100% - 20px) center
 		background-size: 20px
 		color: $black
 	&:disabled, &.disabled
 		opacity: 0.5
-		background: #fff url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
+		background: transparent url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
 		background-size: 20px
 		color: $black
 
@@ -199,6 +199,7 @@ button, .btn
 	text-align: center
 	padding: 13px 24px
 	font-size: 16px
+	font-weight: 500
 	border-radius: 6px
 	transition: 0.3s ease
 
@@ -458,6 +459,7 @@ a.color-accent
 	width: 100%
 	margin: 24px auto 0
 	list-style: none
+	padding: 0
 	li
 		cursor: pointer
 		width: 6px
@@ -497,6 +499,24 @@ a.color-accent
 
 .slick-next
 	right: -72px
+
+.slider-nav
+	width: 100%
+	display: flex
+	align-items: center
+	margin: 24px 0 0
+	.slick-dots
+		width: fit-content
+		margin: 0 auto
+	.slick-arrow
+		position: relative
+		left: 0
+		right: 0
+		top: 0
+		transform: none
+	.slick-next
+		order: 1
+
 //checkbox my
 .label-checkbox
 	position: relative
@@ -862,3 +882,37 @@ a.color-accent
 	background: #F4F7FC
 	border-color: $accent
 	color: $accent
+
+.nav-tabs
+	width: 100%
+	border: none
+	border-radius: 0
+	.nav-item
+		width: 100%
+		margin: 0
+	.nav-link
+		width: 100%
+		margin: 0
+		border: none
+		border-radius: 6px
+		padding: 12px 20px
+		font-size: 16px
+		font-weight: normal
+		line-height: 150%
+		color: $grey
+		text-align: left
+		&.active
+			color: $accent
+			background: rgba($accent, .06)
+
+.tab-content
+	width: 100%
+	h2
+		text-align: left
+		margin: 0 0 32px
+	h3
+		margin: 0 0 24px
+	h4
+		margin: 0 0 12px
+		font-size: 16px
+		line-height: 150%

@@ -267,6 +267,9 @@
 
 .doctor-name
 	margin: 0 0 8px
+	color: $black
+	&:hover
+		color: $accent
 
 .doctor-position
 	color: $grey
@@ -524,3 +527,150 @@
 		padding: 0 0 0 24px
 		&:hover
 			color: $accent
+	&__content
+		width: calc(100% - 56px)
+		padding: 0 0 0 16px
+	&__user
+		width: 56px
+		height: 56px
+		border-radius: 50%
+		@include d-flex
+		overflow: hidden
+		background: #D2DAE1
+		color: $grey
+		font-size: 18px
+		font-weight: 500
+		line-height: 150%
+	&__name
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin: 0 0 8px
+
+.status-visit
+	display: flex
+	align-items: center
+	margin: 0 0 0 auto
+	padding: 6px 12px
+	font-size: 12px
+	font-weight: normal
+	background: rgba($accent, .06)
+	border-radius: 80px
+	img
+		margin: 0 8px 0 0
+		width: 20px
+		min-width: 20px
+
+.reviews-box-my
+	display: none
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 0 12px
+	&:last-child
+		margin: 0
+	&:nth-child(-n+3)
+		display: flex
+
+.reviews-filter
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 24px
+	.select-my
+		width: fit-content
+		margin: 0 0 0 auto
+
+.reviews-filter-rating
+	display: flex
+	align-items: center
+	font-weight: 500
+	font-size: 18px
+	line-height: 150%
+	&__val
+		display: flex
+		align-items: center
+		margin: 0 0 0 16px
+		svg
+			fill: $accent
+			margin: 0 8px 0 0
+			width: 24px
+			height: 24px
+			min-width: 24px
+// page clinic
+.doctocs-section
+	margin: 0 0 88px
+	h2
+		text-align: left
+		max-width: 936px
+		margin: 0 0 16px
+	.doctors-card
+		display: none
+		&:nth-child(-n+3)
+			display: flex
+
+.prices-category
+	margin: 32px 0 0
+
+.prices-box
+	width: 100%
+	background: #fff
+	padding: 16px 20px
+	border-radius: 6px
+	margin: 0 0 24px
+	display: none
+	&:nth-child(-n+2)
+		display: block
+
+.list-price
+	width: 100%
+	font-size: 14px
+	line-height: 150%
+	color: $grey
+	li
+		width: 100%
+		position: relative
+		z-index: 1
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		overflow: hidden
+		margin: 0 0 12px
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 5px
+			width: 100%
+			height: 1px
+			border-bottom: 1px dashed #D2DAE1
+			z-index: -1
+		p, span
+			position: relative
+			background: #fff
+			display: inline-block
+		p
+			padding: 0 10px 0 0
+		span
+			color: $accent
+			padding: 0 0 0 10px
+
+.certificates-slider
+	.slide
+		padding: 0 12px
+	.slick-list
+		margin: 0 -12px
+
+.certificates-item
+	width: 100%
+	height: 380px
+	overflow: hidden
+	@include d-flex
+	padding: 8px
+	border-radius: 6px
+	background: #fff
+	img
+		width: 100%
