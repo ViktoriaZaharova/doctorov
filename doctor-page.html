@@ -126,7 +126,7 @@
 		</div>
 	</header>
 
-	<section class="page page-clinic">
+	<section class="page page-doctor">
 		<div class="page-header">
 			<div class="container">
 				<div class="row">
@@ -134,9 +134,9 @@
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-								<li class="breadcrumb-item"><a href="clinics.html">Клинки</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Клиника неврологии и ортопедии ЗдравКлиник на
-									Беговой</li>
+								<li class="breadcrumb-item"><a href="doctors.html">Врачи</a></li>
+								<li class="breadcrumb-item"><a href="doctors.html">Кардиологи</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Бахарева Нелли Викторовна</li>
 							</ol>
 						</nav>
 					</div>
@@ -174,10 +174,13 @@
 					<div class="col-12 col-lg-8">
 						<div class="product-content">
 							<div class="product-content__box product-content__head doctors-card-item">
-								<div class="doctors-card__photo clinic-card__photo">
-									<a href="clinic-page.html" class="doctors-card__photo-avatar">
-										<img src="img/clinic.jpg" alt="">
+								<div class="doctors-card__photo">
+									<a href="doctor-page.html" class="doctors-card__photo-avatar">
+										<img src="img/doc.png" alt="">
 									</a>
+									<a href="#" class="add-favorite"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#favorite"></use>
+										</svg></a>
 
 									<div class="rating-wrapper">
 										<ul class="list-rating my-ul">
@@ -201,114 +204,76 @@
 									</div>
 								</div>
 								<div class="product-content__name">
-									<h1 class="h2">Клиника неврологии и ортопедии ЗдравКлиник на Беговой</h1>
-									<div class="product-advantages">
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Есть лифт</p>
-											</div>
+									<h1 class="h2">Бахарева Нелли Викторовна</h1>
+									<div class="doctor-position">Кардиолог</div>
+									<div class="doctors-card-item">
+										<ul class="doctor-information my-ul">
+											<li>Стаж 43 года</li>
+											<li>Врач высшей категории</li>
+										</ul>
+									</div>
+									<div class="doctors-card-item">
+										<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+											<span class="btn-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#plus"></use>
+												</svg></span>
+											<span class="btn-text">Доказательная медицина</span>
+											<span class="tooltip-btn" data-bs-toggle="tooltip"
+												title="Нелли Викторовна компетентный доктор. Прием шел 20 минут, за это время она осмотрела меня. При необходимости приду к ней повторно!"><img
+													src="img/info.svg" alt=""></span>
+										</a>
+									</div>
+
+									<div class="doctors-card-item appointment-box">
+										<div class="appointment-box-wrapper">
+											<div class="doctors-card-item__title">Запись на прием</div>
+											<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 										</div>
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Бесплатный Wi-Fi</p>
-											</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="doctors-card-item reception-type product-content__box">
+								<div class="doctors-card-item__title">Тип приема</div>
+								<div class="reception-type-wrapper">
+									<div class="reception-type-box active">
+										<p>В клинике</p>
+										<div class="price-wrapper">
+											<div class="price">от 2 000 ₽</div>
 										</div>
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Проводим диагностику</p>
-											</div>
-										</div>
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Есть парковка</p>
-											</div>
-										</div>
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Принимаем карты</p>
-											</div>
-										</div>
-										<div class="product-advantages-box">
-											<div class="product-advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
-											<div class="product-advantages-box__text">
-												<p>Близко от метро</p>
-											</div>
+									</div>
+									<div class="reception-type-box">
+										<p>На дому</p>
+										<div class="price-wrapper">
+											<div class="price">от 3 000 ₽</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="product-content__box product-content__description doctors-card-item">
-								<div class="h4">О клинике</div>
+
+
+							<div class="product-content__box doctors-card-item">
+								<div class="h4">Информация о враче</div>
 								<div class="box-text">
-									<p>Клиника неврологии и ортопедии ЗдравКлиник на Беговой: ★ 18 врачей ★ 2892 проверенных отзыва
-										пациентов ★ Лучшая цена
-										записи ★ Актуальные цены на услуги! Многопрофильная клиника на станции метро 'Беговая' осуществляет
-										деятельность под
-										руководством д.м.н., профессора Бабовникова А.В. и входит в состав сети медицинских центров
-										ЗдравКлини. В клинике ведут
-										прием доктора и кандидаты медицинских наук, врачи высшей категории, имеющие большой стаж
-										стационарной работы в ведущих
-										лечебных учреждениях г...</p>
-								</div>
-								<a href="#" class="btn-toggle-text link-accent">
-									<span class="link-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg></span>
-									<span class="link-text">Подробнее</span>
-								</a>
-							</div>
-							<div class="product-content__box product-content__specialization doctors-card-item">
-								<div class="h4">Специализация</div>
-								<div class="list-category">
-									<a href="catalog.html" class="list-category__link">Акушеры</a>
-									<a href="catalog.html" class="list-category__link">Аллергологи</a>
-									<a href="catalog.html" class="list-category__link">Ангиохирурги</a>
-									<a href="catalog.html" class="list-category__link">Андрологи</a>
-									<a href="catalog.html" class="list-category__link">Анестезиологи</a>
-									<a href="catalog.html" class="list-category__link">Анестезиологи-реаниматологи</a>
-									<a href="catalog.html" class="list-category__link">Аритмологи</a>
-									<a href="catalog.html" class="list-category__link">Артрологи</a>
-									<a href="catalog.html" class="list-category__link">Вегетологи</a>
-									<a href="catalog.html" class="list-category__link">Венерологи</a>
-									<a href="catalog.html" class="list-category__link">Вертебрологи</a>
-									<a href="catalog.html" class="list-category__link">Врачи МРТ</a>
-									<a href="catalog.html" class="list-category__link">Гастроэнтерологи</a>
-									<a href="catalog.html" class="list-category__link">Гематологи</a>
-									<a href="catalog.html" class="list-category__link">Гемостазиологи</a>
-									<a href="catalog.html" class="list-category__link">Генетики</a>
-									<a href="catalog.html" class="list-category__link">Гепатологи</a>
-									<a href="catalog.html" class="list-category__link">Гинекологи-эндокринологи</a>
-									<a href="catalog.html" class="list-category__link">Гинекологи</a>
-									<a href="catalog.html" class="list-category__link">Гирудотерапевты</a>
-									<a href="catalog.html" class="list-category__link">Гнатологи</a>
-									<a href="catalog.html" class="list-category__link">Гомеопаты</a>
-									<a href="catalog.html" class="list-category__link">Дерматологи</a>
-									<a href="catalog.html" class="list-category__link">Дефектологи</a>
-									<a href="catalog.html" class="list-category__link">Диабетологи</a>
-									<a href="catalog.html" class="list-category__link">Иммунологи</a>
-									<a href="catalog.html" class="list-category__link">Инфекционисты</a>
-									<a href="catalog.html" class="list-category__link">Кардиологи</a>
-									<a href="catalog.html" class="list-category__link">Кардиохирурги</a>
-									<a href="catalog.html" class="list-category__link">Гинекологи-эндокринологи</a>
-									<a href="catalog.html" class="list-category__link">Гинекологи</a>
-									<a href="catalog.html" class="list-category__link">Гирудотерапевты</a>
-									<a href="#" class="link-toggle-category btn btn-border-accent">+24</a>
+									<p>Бахарева Нелли Викторовна - врач гастроэнтеролог, стаж 43 года. Все отзывы о враче. Запись онлайн
+										или по телефону.</p>
+
+									<p>Занимается диагностикой и лечением заболеваний сердечнососудистой системы, дыхательной системы,
+										инфекционных
+										заболеваний, в том числе бронхита, ветрянки, простуды, ОРЗ и ОРВИ, краснухи, пищевого отравления и
+										др. Проводит
+										диагностику и лечение аритмии, атеросклероза, гипертонии, пороков сердца, сердечной недостаточности,
+										тромбофлебита,
+										тахикардии и других заболеваний сердечно-сосудистой системы. Также проводит восстановительное
+										лечение после инфаркта.</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4">
 						<div class="product-sidebar">
-							<div class="doctors-card-item">
-								<a href="#" class="btn btn-map w-100" data-bs-toggle="modal" data-bs-target="#mapModal">
-									<span class="btn-text">Посмотреть на карте</span>
-								</a>
-							</div>
+							
 							<div class="doctors-card-item">
 								<div class="addres-item">
 									<p>г. Москва, ул. Балаклавский пр-т, д. 5, ЮАО, Северное Чертаново</p>
@@ -344,12 +309,11 @@
 									</li>
 								</ul>
 							</div>
+							
 							<div class="doctors-card-item">
-								<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
-							</div>
-							<div class="doctors-card-address">
-								<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
-									в клинику</a>
+								<a href="#" class="btn btn-map w-100" data-bs-toggle="modal" data-bs-target="#mapModal">
+									<span class="btn-text">Посмотреть на карте</span>
+								</a>
 							</div>
 						</div>
 					</div>

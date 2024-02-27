@@ -1023,3 +1023,122 @@
 .certificates-item img {
   width: 100%;
 }
+
+.product-sidebar {
+  width: 100%;
+  padding: 24px;
+  border-radius: 6px;
+  background: #F3F6FA;
+}
+.product-sidebar .addres-item {
+  font-weight: 500;
+  color: #141414;
+  margin: 0 0 16px;
+}
+.product-sidebar .list-schedule li p, .product-sidebar .list-schedule li span {
+  background: #F3F6FA;
+}
+
+.product-content {
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+}
+.product-content h1 {
+  text-align: left;
+  margin: 0 0 8px;
+}
+.product-content .doctors-card__photo {
+  position: relative;
+  max-width: 140px;
+}
+.product-content .doctors-card__photo-avatar {
+  width: 140px;
+  height: 140px;
+  min-width: 140px;
+}
+.product-content .clinic-card__photo .doctors-card__photo-avatar {
+  border-radius: 6px;
+}
+.product-content__box {
+  width: 100%;
+  margin: 0 0 24px;
+}
+.product-content__box:last-child {
+  margin: 0;
+}
+.product-content__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.product-content__name {
+  width: calc(100% - 140px);
+  padding: 0 0 0 52px;
+}
+.product-content__description .box-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.product-content__description .box-text.open {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: none;
+}
+.product-content .list-category__link {
+  display: none;
+}
+.product-content .list-category__link:nth-child(-n+9) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-content .doctor-position {
+  margin: 0 0 24px;
+}
+
+.product-advantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4px 0 0;
+}
+.product-advantages-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 20px 0 0;
+}
+.product-advantages-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 12px 0 0;
+}

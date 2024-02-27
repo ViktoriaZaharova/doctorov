@@ -674,3 +674,86 @@
 	background: #fff
 	img
 		width: 100%
+
+.product-sidebar
+	width: 100%
+	padding: 24px
+	border-radius: 6px
+	background: #F3F6FA
+
+	.addres-item
+		font-weight: 500
+		color: $black
+		margin: 0 0 16px
+	.list-schedule
+		li
+			p, span
+				background: #F3F6FA
+
+.product-content
+	width: 100%
+	font-size: 14px
+	line-height: 150%
+	h1
+		text-align: left
+		margin: 0 0 8px
+	.doctors-card__photo
+		position: relative
+		max-width: 140px
+		&-avatar
+			width: 140px
+			height: 140px
+			min-width: 140px
+	.clinic-card__photo
+		.doctors-card__photo-avatar
+			border-radius: 6px
+	&__box
+		width: 100%
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+	&__head
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	&__name
+		width: calc(100% - 140px)
+		padding: 0 0 0 52px
+	&__description
+		.box-text
+			overflow: hidden
+			display: -webkit-box
+			-webkit-line-clamp: 5
+			-webkit-box-orient: vertical
+			overflow: hidden
+			&.open
+				display: block
+				overflow: visible
+				-webkit-line-clamp: none
+	.list-category
+		&__link
+			display: none
+			&:nth-child(-n+9)
+				display: flex
+	.doctor-position
+		margin: 0 0 24px
+
+.product-advantages
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 4px 0 0
+	&-box
+		display: flex
+		align-items: center
+		width: 50%
+		margin: 20px 0 0
+		&__icon
+			@include d-flex
+			width: 20px
+			height: 20px
+			min-width: 20px
+			margin: 0 12px 0 0
+
+// doctor page

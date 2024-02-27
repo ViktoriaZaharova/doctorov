@@ -112,18 +112,21 @@ $('.btn-toggle-text').on('click', function (e) {
 
 	var
 		$this = $(this),
-		content = $(this).parents('.doctors-card').find('.doctors-card__description');
+		content = $(this).parents('.doctors-card').find('.doctors-card__description'),
+		content2 = $(this).parents('.product-content__box').find('.box-text');
 
 
 	if (!$this.hasClass('active')) {
 		$this.addClass('active');
 		$this.find('.link-text').html('Скрыть');
 		content.addClass('open');
+		content2.addClass('open');
 	} else {
 		$this.removeClass('active');
 		$this.find('.link-text').html('Подробнее');
 
 		content.removeClass('open');
+		content2.removeClass('open');
 	}
 });
 
