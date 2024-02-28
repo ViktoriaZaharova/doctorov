@@ -64,8 +64,8 @@
 					</a>
 
 					<div class="btn-search"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#search"></use>
-					</svg></div>
+							<use xlink:href="img/sprite.svg#search"></use>
+						</svg></div>
 				</div>
 			</div>
 		</div>
@@ -110,7 +110,7 @@
 									</div>
 								</div>
 							</div>
-						
+
 							<button type="submit" class="btn btn-accent btn-search-submit">
 								<span class="btn-icon">
 									<svg class="svg-icon">
@@ -514,7 +514,7 @@
 									<use xlink:href="img/sprite.svg#close"></use>
 								</svg></span>
 						</label>
-	
+
 						<button type="submit">
 							<svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#search"></use>
@@ -545,7 +545,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="areaModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -558,7 +558,7 @@
 					<div class="modal-title h2">Район</div>
 				</div>
 				<div class="modal-body">
-	
+
 					<form method="post" class="form-area">
 						<ul class="list-radio my-ul">
 							<li>
@@ -605,7 +605,7 @@
 								</label>
 							</li>
 						</ul>
-	
+
 						<button type="submit" class="btn btn-accent btn-search-submit">
 							<span class="btn-icon">
 								<svg class="svg-icon">
@@ -615,12 +615,12 @@
 							<span class="btn-text">Найти врача</span>
 						</button>
 					</form>
-	
+
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="dateModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -633,10 +633,10 @@
 					<div class="modal-title h2">Дата приема</div>
 				</div>
 				<div class="modal-body">
-	
+
 					<form method="post" class="form-area">
 						<div class="datepicker datepicker1"></div>
-	
+
 						<div class="form-area-box">
 							<h3>Время посещения</h3>
 							<ul class="list-checkbox my-ul">
@@ -669,7 +669,7 @@
 								</li>
 							</ul>
 						</div>
-	
+
 						<button type="submit" class="btn btn-accent btn-search-submit">
 							<span class="btn-icon">
 								<svg class="svg-icon">
@@ -679,12 +679,12 @@
 							<span class="btn-text">Найти врача</span>
 						</button>
 					</form>
-	
+
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="callModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -703,19 +703,19 @@
 							<input type="text" name="name" required>
 							<span class="input-text">Имя</span>
 						</label>
-	
+
 						<label>
 							<input type="text" name="phone" required>
 							<span class="input-text">Телефон</span>
 						</label>
-	
+
 						<div class="consent">Нажимая на "Записаться", вы даете согласие на <a href="#"
 								class="d-inline color-accent">обработку персональных данных</a></div>
-	
+
 						<button type="submit" class="btn btn-accent btn-search-submit">
 							<span class="btn-text">Записаться</span>
 						</button>
-	
+
 						<div class="information-call">
 							<div class="information-call__icon"><img src="img/info-blue.svg" alt=""></div>
 							<div class="information-call__text">
@@ -723,7 +723,7 @@
 							</div>
 						</div>
 					</form>
-	
+
 				</div>
 				<div class="modal-footer">
 					<div class="appointment-box-wrapper">
@@ -736,7 +736,25 @@
 	</div>
 
 
-
+	<div class="modal fade" id="mapModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+				</button>
+				<div class="modal-header">
+					<div class="modal-title h2">Где принимает врач</div>
+				</div>
+				<div class="modal-body">
+					<div class="map-wrapper">
+						<span>Карта</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

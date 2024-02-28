@@ -578,6 +578,11 @@
 .time-list-date .time-list-item span {
   color: #707D89;
 }
+.time-list-date .time-list-item.disabled {
+  background: #E4EBF3;
+  border-color: #E4EBF3;
+  pointer-events: none;
+}
 
 .addres-item {
   margin: 8px 0 0;
@@ -868,6 +873,12 @@
   display: flex;
 }
 
+.reviews-box-my-doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reviews-filter {
   width: 100%;
   display: -webkit-box;
@@ -945,6 +956,25 @@
   display: none;
 }
 .prices-box:nth-child(-n+2) {
+  display: block;
+}
+.prices-box h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.prices-box h4 .price-value {
+  color: #237AE0;
+  margin: 0 0 0 auto;
+}
+
+.prices-box-doc {
+  display: none;
+}
+.prices-box-doc:nth-child(-n+3) {
   display: block;
 }
 
@@ -1029,11 +1059,15 @@
   padding: 24px;
   border-radius: 6px;
   background: #F3F6FA;
+  font-size: 14px;
+  line-height: 150%;
 }
-.product-sidebar .addres-item {
-  font-weight: 500;
-  color: #141414;
+.product-sidebar .doctors-card-address > p {
   margin: 0 0 16px;
+}
+.product-sidebar .doctors-card-address strong {
+  color: #141414;
+  display: inline-block;
 }
 .product-sidebar .list-schedule li p, .product-sidebar .list-schedule li span {
   background: #F3F6FA;
@@ -1141,4 +1175,99 @@
   height: 20px;
   min-width: 20px;
   margin: 0 12px 0 0;
+}
+
+.time-list-slider {
+  padding: 0 22px;
+}
+.time-list-slider .slick-slide {
+  padding: 0 3px;
+}
+.time-list-slider .time-list-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.time-list-slider .time-list-item p {
+  margin: 0 0 4px;
+}
+
+.specialization-box {
+  margin: 0 0 32px;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #D2DAE1;
+}
+.specialization-box:last-child {
+  margin: 0;
+  margin: 0;
+  border: none;
+}
+.specialization-box .list-category__link {
+  display: none;
+}
+.specialization-box .list-category__link:nth-child(-n+15) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-education {
+  width: 100%;
+}
+
+.list-education-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+.list-education-item:last-child {
+  margin: 0;
+}
+.list-education-item__year {
+  min-width: 72px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.list-education-item__text {
+  color: #707D89;
+  width: calc(100% - 72px);
+  padding: 0 0 0 24px;
+}
+
+.doctors-neardy {
+  margin: 0 0 80px;
+}
+.doctors-neardy h2 {
+  text-align: left;
+}
+.doctors-neardy-slider .slide {
+  height: auto;
+}
+.doctors-neardy-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.doctors-neardy-slider .doctors-card {
+  height: 100%;
 }

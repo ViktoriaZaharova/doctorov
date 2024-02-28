@@ -353,6 +353,20 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+.list-dots-accent
+	li
+		display: flex
+		align-items: flex-start
+		&::before
+			content: ''
+			display: inline-block
+			width: 6px
+			min-width: 6px
+			height: 6px
+			background: $accent
+			border-radius: 50%
+			margin: 9px 10px 0 0
+
 h1, .h1
 	width: 100%
 	margin: 0 auto 16px
@@ -489,18 +503,31 @@ a.color-accent
 	padding: 0
 	li
 		cursor: pointer
-		width: 6px
-		height: 6px
+		width: 10px
+		height: 10px
 		border-radius: 50%
 		transition: .3s ease
-		background: #D2DAE1
 		margin: 0 8px
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			transition: .3s ease
+			background: #D2DAE1
 		button
 			display: none
 		&.slick-active
-			background: $accent
-			width: 10px
-			height: 10px
+			&::before
+				width: 100%
+				height: 100%
+				background: $accent
 
 .slick-arrow
 	position: absolute
@@ -526,6 +553,21 @@ a.color-accent
 
 .slick-next
 	right: -72px
+
+.slick-arrow-my
+	width: 20px
+	height: 20px
+	background: transparent
+	padding: 0
+	border-radius: 0
+	stroke: $grey
+	&:hover, &:focus
+		background: transparent
+		stroke: $accent
+	&.slick-prev
+		left: 0
+	&.slick-next
+		right: 0
 
 .slider-nav
 	width: 100%
@@ -943,6 +985,8 @@ a.color-accent
 		margin: 0 0 12px
 		font-size: 16px
 		line-height: 150%
+		&:last-child
+			margin: 0
 
 .box-text
 	p
