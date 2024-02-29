@@ -22,6 +22,28 @@ header {
 .nav-menu {
   margin: 0 auto 0 40px;
 }
+.nav-menu .locaton-city, .nav-menu .logo, .nav-menu .phone {
+  display: none;
+}
+.nav-menu .logo {
+  margin: 0;
+}
+.nav-menu__close {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+  stroke: #237AE0;
+}
 
 .menu {
   font-size: 16px;

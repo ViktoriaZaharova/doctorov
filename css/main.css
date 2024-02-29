@@ -89,6 +89,7 @@
 .advantages-box__body .box-text {
   margin: 4px 0 0;
   font-size: 14px;
+  line-height: normal;
 }
 .advantages-box__body .box-text span {
   color: #707D89;
@@ -145,6 +146,10 @@
 
 .btn-toggle-services {
   display: none;
+}
+
+.cities-services h2 {
+  margin: 0 auto 24px;
 }
 
 .form-search-doctors {

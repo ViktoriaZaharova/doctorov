@@ -41,11 +41,17 @@ footer .box-text p {
 
 .footer-menu {
   font-size: 14px;
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer-menu li {
+  width: 50%;
   margin: 0 0 14px;
 }
 .footer-menu li:last-child {
@@ -126,6 +132,7 @@ footer .box-text p {
   width: 100%;
   margin: 0;
   text-align: left;
+  padding: 0 24px 0 0;
 }
 
 .modal-body {
@@ -189,6 +196,7 @@ footer .box-text p {
   stroke: #707D89;
   width: 20px;
   height: 20px;
+  min-width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +214,9 @@ footer .box-text p {
 }
 .form-search-modal [type=submit]:hover {
   stroke: #237AE0;
+}
+.form-search-modal .input-text {
+  padding-right: 40px;
 }
 
 #areaModal .modal-dialog {

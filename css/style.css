@@ -117,7 +117,7 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 }
 input:hover, textarea:hover, select:hover {
   background: #EFF3F9;
-  color: #707D89;
+  color: #141414;
 }
 input:focus, input.active, input:active, textarea:focus, textarea.active, textarea:active, select:focus, select.active, select:active {
   border-color: #D2DAE1;
@@ -172,7 +172,7 @@ input[type=radio], input[type=checkbox] {
   display: none;
   top: 14px;
   right: 20px;
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -982,7 +982,7 @@ a.color-accent:hover {
   top: 100%;
   -webkit-box-shadow: 0 6px 20px rgba(20, 20, 20, 0.08);
           box-shadow: 0 6px 20px rgba(20, 20, 20, 0.08);
-  z-index: 2;
+  z-index: 1;
   background: #fff;
   margin: 8px 0 0;
   padding: 16px 8px;

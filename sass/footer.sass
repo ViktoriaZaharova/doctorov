@@ -35,8 +35,11 @@ footer
 
 .footer-menu
 	font-size: 14px
-	column-count: 2
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
 	li
+		width: 50%
 		margin: 0 0 14px
 		&:last-child
 			margin: 0
@@ -98,6 +101,7 @@ footer
 	width: 100%
 	margin: 0
 	text-align: left
+	padding: 0 24px 0 0
 
 .modal-body
 	padding: 0 40px 40px
@@ -143,6 +147,7 @@ footer
 		stroke: $grey
 		width: 20px
 		height: 20px
+		min-width: auto
 		@include d-flex
 		position: absolute
 		top: 14px
@@ -151,6 +156,8 @@ footer
 		margin: 0
 		&:hover
 			stroke: $accent
+	.input-text
+		padding-right: 40px
 
 #areaModal
 	.modal-dialog

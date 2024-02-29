@@ -1,16 +1,223 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
+	.menu
+		margin: 0 20px 0 0
+		.nav-item
+			margin: 0 20px 0 0
 
 @media only screen and (max-width: 992px)
+	.nav-menu
+		display: none
+		position: fixed
+		right: 0
+		top: 0
+		height: 100%
+		overflow-y: auto
+		width: 100%
+		max-width: 290px
+		z-index: 10
+		background: #fff
+		padding: 20px 30px
+		justify-content: flex-start
+		align-items: flex-start
+		flex-direction: column
+		border-left: 1px solid #D2DAE1
+		.locaton-city, .logo, .phone
+			display: flex
+		.link
+			margin: 0 0 15px
+		&__close
+			display: flex
+
+	.menu
+		flex-direction: column
+		align-items: flex-start
+		margin: 20px 0
+		width: 100%
+		.nav-item
+			margin: 0 0 10px
+
+	.btn-burger
+		display: flex
+
+	header
+		.logo
+			margin: 0 auto 0 20px
+
+	.btn-search
+		display: flex
+
+	.phone
+		margin: 0 0 0 20px
+
+	.footer-box
+		margin: 0 0 24px
+
+	.footer-top
+		padding: 32px 0 8px
+
+	.footer-bottom
+		padding: 24px 0
+
+	.box-text-documents
+		margin: 16px 0 0
 
 @media only screen and (max-width: 768px)
+	header
+		padding: 16px 0
+		.link
+			display: none
+
+		.logo
+			margin: 0 auto
+
+	.p-64
+		padding: 32px 0
+
+	.m-80
+		margin: 40px 0
+
+	.mb-48
+		margin-bottom: 24px
+
+	h1, .h1
+		font-size: 30px
+
+	.advantages-wrapper
+		margin: 20px 0 0
+
+	.btn-toggle-services
+		margin: 16px auto 0
+
+	.btn
+		font-size: 14px
+		line-height: normal
 
 @media only screen and (max-width: 576px)
+	h1, .h1
+		font-size: 26px
+		line-height: 120%
+
+	h2, .h2
+		font-size: 22px
+		line-height: 120%
+
+	h3, .h3
+		font-size: 20px
+		line-height: normal
+
+	h4, .h4
+		margin: 0 0 8px
+
+	body
+		line-height: normal
+
+	.mb-24
+		margin-bottom: 16px
+
+	.cities-services
+		h2
+			margin: 0 auto 16px
+
+	.list-category
+		margin: 16px 0 0
+		font-size: 12px
+		&__link
+			padding: 6px 10px
+			margin: 0 4px 4px 0
+			&:last-child
+				margin: 0 0 4px
+
+	.link-toggle-category
+		padding: 4px 6px
+		height: auto
+		font-size: 12px
+
+	.footer-menu
+		font-size: 12px
+		line-height: normal
+		li
+			margin: 0 0 8px
+			width: 100%
+
+	.footer-phone
+		font-size: 18px
+		line-height: 130%
+
+	.footer-mail
+		font-size: 14px
+
+	.footer-bottom
+		font-size: 12px
+
+	.footer-call p
+		font-size: 12px
+		line-height: normal
+		margin: 0 0 8px
+
+	.modal-header
+		margin: 0 0 24px
+		padding: 20px 20px 0
+
+	.modal-body
+		padding: 0 20px 20px
+
+	.list-cities
+		margin: 24px 0 0
+		column-count: 2
+		li
+			margin: 0 0 8px
+
+	.input-text
+		font-size: 14px
+		top: 18px
+
+	.form-search
+		flex-wrap: wrap
+		label
+			width: 100%
+			margin: 0 0 8px
+		[type='submit']
+			min-width: auto
+			width: 100%
+
+	.result-search
+		width: 100%
+		top: 52px
+
+	.form-search-modal
+		[type='submit']
+			width: 20px
+
+	.advantages-box
+		padding: 20px
+
+	.list-services
+		li
+			flex-wrap: wrap
+			&::before
+				display: none
+			p
+				width: 100%
+				margin: 0 0 5px
+				padding: 0
+			span
+				padding: 0
+				margin: 0
+
+	.btn
+		font-size: 12px
+
+	.btn-border-accent
+		padding: 12px 25px
+
+	.link-toggle-category
+		padding: 6px 13px
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)

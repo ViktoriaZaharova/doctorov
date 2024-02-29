@@ -6,6 +6,11 @@ $('.btn-burger').on('click', function (e) {
 	$('.nav-menu').fadeToggle();
 });
 
+$('.nav-menu__close').on('click', function (e) {
+	e.preventDefault();
+	$('.nav-menu').fadeOut();
+});
+
 // animate scroll
 $('.go_to').click(function (e) {
 	e.preventDefault();
@@ -197,4 +202,10 @@ $(function () {
 });
 $(function () {
 	$(".datepicker1").datepicker();
+});
+
+
+// fancybox
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
 });
