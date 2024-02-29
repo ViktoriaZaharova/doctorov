@@ -11,6 +11,16 @@ $('.nav-menu__close').on('click', function (e) {
 	$('.nav-menu').fadeOut();
 });
 
+// filter
+$('.btn-filter').on('click', function (e) {
+	e.preventDefault();
+	$('.filter-mobile').fadeToggle();
+});
+
+$('.filter-mobile__close').on('click', function () {
+	$('.filter-mobile').fadeOut();
+});
+
 // animate scroll
 $('.go_to').click(function (e) {
 	e.preventDefault();
@@ -169,6 +179,23 @@ $('.doctors-neardy-slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 });
+
+// slick active
+$(window).on('load resize', function () {
+	if ($(window).width() < 576) {
+		$('.time-list-slider-mob:not(.slick-initialized)').slick({
+			dots: false,
+			infinite: true,
+			speed: 100,
+			slidesToShow: 1,
+			arrows: false,
+			variableWidth: true,
+		});
+	} else {
+		$(".time-list-slider-mob.slick-initialized").slick("unslick");
+	}
+});
+// slick active
 
 // tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

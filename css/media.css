@@ -7,6 +7,26 @@
   .menu .nav-item {
     margin: 0 20px 0 0;
   }
+  .filter-box {
+    margin: 0 20px 0 0;
+  }
+  .doctors-card {
+    padding: 20px;
+  }
+  .doctors-card__body {
+    width: calc(100% - 320px);
+  }
+  .doctors-card__footer {
+    max-width: 320px;
+  }
+  .doctors-card .appointment-box-wrapper {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+  .appointment-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media only screen and (max-width: 992px) {
   .nav-menu {
@@ -88,6 +108,36 @@
   .box-text-documents {
     margin: 16px 0 0;
   }
+  .page-header {
+    padding: 24px 0;
+    border-radius: 24px;
+  }
+  .page-body {
+    padding: 16px 0 56px;
+  }
+  .form-search-doctors {
+    margin: 0;
+  }
+  .filter-wrapper .btn-group, .filter-wrapper .btn-medicine {
+    display: none;
+  }
+  .filter-box {
+    margin: 0;
+  }
+  .search-doctors-result {
+    margin: 0 0 16px;
+  }
+  .doctors-card {
+    padding: 16px;
+  }
+  .doctors-card__body {
+    width: 100%;
+    padding: 0 0 0 144px;
+  }
+  .doctors-card__footer {
+    margin: 16px 0 0;
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -111,6 +161,9 @@
   h1, .h1 {
     font-size: 30px;
   }
+  h2, .h2 {
+    font-size: 26px;
+  }
   .advantages-wrapper {
     margin: 20px 0 0;
   }
@@ -120,6 +173,60 @@
   .btn {
     font-size: 14px;
     line-height: normal;
+  }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-box p {
+    display: none;
+  }
+  .form-search-doctors {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 20px;
+  }
+  .form-search-doctors label {
+    width: 100%;
+  }
+  .form-search-doctors [type=submit] {
+    width: 100%;
+  }
+  .filter-mobile {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    max-width: 290px;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    padding: 20px;
+    overflow-y: auto;
+    border-left: 1px solid #D2DAE1;
+  }
+  .filter-mobile__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-mobile .btn-medicine {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .filter-mobile .btn-medicine, .filter-mobile .btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-mobile .btn-group .btn {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .filter-mobile .btn-group .btn:last-child {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -137,6 +244,11 @@
   }
   h4, .h4 {
     margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .btn-sm {
+    padding: 10px 20px;
   }
   body {
     line-height: normal;
@@ -246,11 +358,153 @@
   }
   .btn {
     font-size: 12px;
+    padding: 8px 24px;
+  }
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
   }
   .btn-border-accent {
     padding: 12px 25px;
   }
   .link-toggle-category {
     padding: 6px 13px;
+  }
+  .search-doctors-result span {
+    display: block;
+    width: 100%;
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .search-doctors-result span::before {
+    display: none;
+  }
+  .doctors-card {
+    min-height: auto;
+    font-size: 12px;
+  }
+  .doctors-card__photo {
+    margin: 0 24px 0 0;
+    position: relative;
+    max-width: 112px;
+  }
+  .doctors-card__body {
+    padding: 0;
+  }
+  .doctors-card__body .rating-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .doctors-card__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 16px;
+  }
+  .doctors-card__head .rating-wrapper {
+    display: none;
+  }
+  .doctors-card .list-rating {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 16px 0 0;
+  }
+  .doctors-card .rating-value {
+    margin: 0;
+  }
+  .doctor-name {
+    line-height: normal;
+  }
+  .reception-type-box {
+    padding: 8px 12px;
+  }
+  .reception-type-box .price-wrapper {
+    font-size: 16px;
+  }
+  .doctors-card-item {
+    margin: 0 0 16px;
+    font-size: 12px;
+    line-height: normal;
+  }
+  .doctors-card-item:last-child {
+    margin: 0;
+  }
+  .doctors-card-item__title {
+    margin: 0 0 4px;
+  }
+  .doctors-card-item__title.h4 {
+    margin: 0 0 16px;
+  }
+  .doctor-phone {
+    font-size: 16px;
+  }
+  .rating-wrapper {
+    margin: 8px auto 0;
+  }
+  .list-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .list-address-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    position: relative;
+  }
+  .list-address-item::before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+  .list-address-item p {
+    padding: 0 0 0 12px;
+  }
+  .list-address-item span {
+    display: block;
+    margin: 2px 0 0;
+    width: 100%;
+  }
+  .time-list-slider-mob {
+    width: calc(100% + 16px);
+  }
+  .time-list-slider-mob .slick-slide {
+    margin: 0;
+    width: 67px;
+  }
+  .time-list-item {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .pagination .page-item {
+    margin: 0 6px 0 0;
+  }
+  .pagination .page-item:last-child {
+    margin: 0;
+  }
+  .pagination .page-link {
+    width: 36px;
+    height: 40px;
+    min-width: 36px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .select-my {
+    font-size: 12px;
+    padding: 0 40px 0 20px;
   }
 }

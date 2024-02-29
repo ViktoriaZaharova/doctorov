@@ -113,6 +113,43 @@
 		margin: 0 auto 24px
 
 // doctors page
+.filter-mobile
+	width: 100%
+	.btn-medicine, .btn-group
+		display: none
+	&__head
+		margin: 0 0 20px
+		width: 100%
+		align-items: center
+		justify-content: space-between
+		display: none
+		h3
+			margin: 0
+	&__close
+		width: 20px
+		height: 20px
+		min-width: 20px
+		stroke: $accent
+		cursor: pointer
+		@include d-flex
+
+.btn-filter
+	font-size: 12px
+	color: $accent
+	align-items: center
+	display: none
+	margin: 16px 0 0 auto
+	&:hover
+		color: $grey
+	&__icon
+		margin: 0 0 0 8px
+		width: 20px
+		height: 20px
+		min-width: 20px
+		stroke: $accent
+		fill: none
+		@include d-flex
+
 .form-search-doctors
 	margin: 0 0 20px
 	label
@@ -125,6 +162,7 @@
 	margin: 0 0 32px
 	display: flex
 	align-items: flex-start
+	flex-wrap: wrap
 	span
 		color: $grey
 		display: inline-flex
@@ -190,6 +228,8 @@
 		padding: 0 24px 0 144px
 		z-index: 1
 		width: calc(100% - 360px)
+		.rating-wrapper
+			display: none
 	&__photo
 		position: absolute
 		left: 0

@@ -7,6 +7,22 @@
 		.nav-item
 			margin: 0 20px 0 0
 
+	.filter-box
+		margin: 0 20px 0 0
+
+	.doctors-card
+		padding: 20px
+		&__body
+			width: calc(100% - 320px)
+		&__footer
+			max-width: 320px
+		.appointment-box-wrapper
+			width: 100%
+			margin: 0 0 16px
+
+	.appointment-box
+		flex-wrap: wrap
+
 @media only screen and (max-width: 992px)
 	.nav-menu
 		display: none
@@ -64,6 +80,35 @@
 	.box-text-documents
 		margin: 16px 0 0
 
+	.page-header
+		padding: 24px 0
+		border-radius: 24px
+
+	.page-body
+		padding: 16px 0 56px
+
+	.form-search-doctors
+		margin: 0
+
+	.filter-wrapper
+		.btn-group, .btn-medicine
+			display: none
+
+	.filter-box
+		margin: 0
+
+	.search-doctors-result
+		margin: 0 0 16px
+
+	.doctors-card
+		padding: 16px
+		&__body
+			width: 100%
+			padding: 0 0 0 144px
+		&__footer
+			margin: 16px 0 0
+			max-width: none
+
 @media only screen and (max-width: 768px)
 	header
 		padding: 16px 0
@@ -85,6 +130,9 @@
 	h1, .h1
 		font-size: 30px
 
+	h2, .h2
+		font-size: 26px
+
 	.advantages-wrapper
 		margin: 20px 0 0
 
@@ -94,6 +142,49 @@
 	.btn
 		font-size: 14px
 		line-height: normal
+
+	.btn-filter
+		display: flex
+
+	.filter-box
+		p
+			display: none
+
+	.form-search-doctors
+		flex-wrap: wrap
+		margin: 0 0 20px
+		label
+			width: 100%
+		[type='submit']
+			width: 100%
+
+	.filter-mobile
+		display: none
+		position: fixed
+		right: 0
+		top: 0
+		height: 100%
+		max-width: 290px
+		width: 100%
+		background: #fff
+		z-index: 10
+		padding: 20px
+		overflow-y: auto
+		border-left: 1px solid #D2DAE1
+		&__head
+			display: flex
+		.btn-medicine
+			width: 100%
+			margin: 0 0 10px
+
+		.btn-medicine, .btn-group
+			display: flex
+		.btn-group
+			.btn
+				margin: 0 0 10px
+				width: 100%
+				&:last-child
+					margin: 0
 
 @media only screen and (max-width: 576px)
 	h1, .h1
@@ -110,6 +201,11 @@
 
 	h4, .h4
 		margin: 0 0 8px
+		font-size: 16px
+		line-height: 150%
+
+	.btn-sm
+		padding: 10px 20px
 
 	body
 		line-height: normal
@@ -209,12 +305,123 @@
 
 	.btn
 		font-size: 12px
+		padding: 8px 24px
+
+	.btn-icon
+		width: 20px
+		height: 20px
+		min-width: 20px
 
 	.btn-border-accent
 		padding: 12px 25px
 
 	.link-toggle-category
 		padding: 6px 13px
+
+	.search-doctors-result span
+		display: block
+		width: 100%
+		margin: 8px 0 0
+		font-size: 12px
+		font-weight: normal
+		&::before
+			display: none
+
+	.doctors-card
+		min-height: auto
+		font-size: 12px
+		&__photo
+			margin: 0 24px 0 0
+			position: relative
+			max-width: 112px
+
+		&__body
+			padding: 0
+			.rating-wrapper
+				display: flex
+				align-items: center
+		&__head
+			display: flex
+			align-items: center
+			margin: 0 0 16px
+			.rating-wrapper
+				display: none
+		.list-rating
+			width: fit-content
+			margin: 0 16px 0 0
+		.rating-value
+			margin: 0
+
+	.doctor-name
+		line-height: normal
+
+	.reception-type-box
+		padding: 8px 12px
+		.price-wrapper
+			font-size: 16px
+
+	.doctors-card-item
+		margin: 0 0 16px
+		font-size: 12px
+		line-height: normal
+		&:last-child
+			margin: 0
+		&__title
+			margin: 0 0 4px
+			&.h4
+				margin: 0 0 16px
+
+	.doctor-phone
+		font-size: 16px
+
+	.rating-wrapper
+		margin: 8px auto 0
+
+	.list-address
+		display: flex
+		align-items: flex-start
+
+	.list-address-item
+		flex-wrap: wrap
+		margin: 0
+		position: relative
+		&::before
+			position: absolute
+			left: 0
+			top: 4px
+		p
+			padding: 0 0 0 12px
+		span
+			display: block
+			margin: 2px 0 0
+			width: 100%
+
+	.time-list-slider-mob
+		width: calc(100% + 16px)
+		.slick-slide
+			margin: 0
+			width: 67px
+
+	.time-list-item
+		padding: 8px 12px
+		font-size: 12px
+		line-height: 150%
+
+	.pagination
+		.page-item
+			margin: 0 6px 0 0
+			&:last-child
+				margin: 0
+		.page-link
+			width: 36px
+			height: 40px
+			min-width: 36px
+			border-radius: 10px
+			font-size: 14px
+
+	.select-my
+		font-size: 12px
+		padding: 0 40px 0 20px
 
 @media only screen and (max-width: 480px)
 

@@ -151,7 +151,7 @@ input[type=radio], input[type=checkbox] {
   color: #707D89;
   position: absolute;
   left: 0;
-  top: 14px;
+  top: 16px;
   width: 100%;
   padding: 0 20px;
   -webkit-transition: 0.3s ease;
@@ -912,7 +912,7 @@ a.color-accent:hover {
 .label-radio-type {
   position: relative;
   z-index: 1;
-  padding: 12px 24px;
+  padding: 10px 24px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
