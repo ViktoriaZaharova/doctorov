@@ -147,7 +147,7 @@
 		<div class="page-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 d-none d-sm-block">
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
@@ -158,31 +158,65 @@
 					</div>
 
 					<div class="col-12">
-						<form method="post" class="form-search form-search-doctors">
-							<label>
-								<input type="text" name="search" required>
-								<span class="input-text">Фамилия врача, специальность или название клиники</span>
-								<span class="input-clear"><svg class="svg-icon">
+						<div class="filter-mobile">
+							<div class="filter-mobile__head">
+								<h3>Фильтр</h3>
+								<div class="filter-mobile__close"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#close"></use>
-									</svg></span>
-							</label>
-							<label>
-								<input type="text" name="search" required>
-								<span class="input-text">Метро, район, округ</span>
-								<span class="input-clear"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#close"></use>
-									</svg></span>
-							</label>
+									</svg></div>
+							</div>
+							<form method="post" class="form-search form-search-doctors">
+								<label>
+									<input type="text" name="search" required>
+									<span class="input-text">Фамилия врача, специальность или название клиники</span>
+									<span class="input-clear"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg></span>
+								</label>
+								<label>
+									<input type="text" name="search" required>
+									<span class="input-text">Метро, район, округ</span>
+									<span class="input-clear"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg></span>
+								</label>
 
-							<button type="submit" class="btn btn-accent btn-search-submit">
-								<span class="btn-icon">
-									<svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#search"></use>
-									</svg>
-								</span>
-								<span class="btn-text">Найти</span>
-							</button>
-						</form>
+								<button type="submit" class="btn btn-accent btn-search-submit">
+									<span class="btn-icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#search"></use>
+										</svg>
+									</span>
+									<span class="btn-text">Найти</span>
+								</button>
+							</form>
+							<a href="#" class="btn btn-sm btn-border btn-border-grey btn-medicine">
+								<span class="btn-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#plus"></use>
+									</svg></span>
+								<span class="btn-text">Доказательная медицина</span>
+							</a>
+
+							<div class="btn-group">
+								<a href="#" class="btn btn-sm btn-border btn-border-grey" data-bs-toggle="modal"
+									data-bs-target="#areaModal">
+									<span class="btn-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+									<span class="btn-text">Место</span>
+								</a>
+								<a href="#" class="btn btn-sm btn-border btn-border-grey active" data-bs-toggle="modal"
+									data-bs-target="#dateModal">
+									<span class="btn-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#calendar"></use>
+										</svg></span>
+									<span class="btn-text">Дата приема</span>
+									<span class="btn-clear btn-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#close2"></use>
+										</svg></span>
+								</a>
+							</div>
+						</div>
 
 						<h1 class="h2 search-doctors-result">Кардиологи Москвы<span>2 877 врачей</span></h1>
 
@@ -226,6 +260,12 @@
 								</a>
 							</div>
 						</div>
+						<a href="#" class="btn-filter">
+							<span class="btn-filter__text">Фильтр</span>
+							<span class="btn-filter__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#filter"></use>
+								</svg></span>
+						</a>
 					</div>
 				</div>
 			</div>

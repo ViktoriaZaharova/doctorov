@@ -1,5 +1,16 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1340px) {
+  .reviews-slider {
+    padding: 0 30px;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .menu {
     margin: 0 20px 0 0;
@@ -227,6 +238,13 @@
   }
   .filter-mobile .btn-group .btn:last-child {
     margin: 0;
+  }
+  .reviews-box {
+    padding: 16px;
+  }
+  .reviews-box__clinic {
+    padding: 0 0 0 20px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -506,5 +524,50 @@
   .select-my {
     font-size: 12px;
     padding: 0 40px 0 20px;
+  }
+  .form-area [type=submit] {
+    margin: 16px 0 0;
+  }
+  .form-area-box {
+    margin: 24px 0 0;
+  }
+  .form-area-box h3 {
+    margin: 0 0 16px;
+  }
+  .datepicker .ui-datepicker .ui-datepicker-title {
+    margin: 0 auto;
+  }
+  .datepicker .ui-datepicker .ui-datepicker-header {
+    font-size: 20px;
+  }
+  .list-checkbox li {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .list-checkbox li:last-child {
+    margin: 0;
+  }
+  .result-search-doctors {
+    margin: 30px auto 0;
+  }
+  .clinic-card .rating-wrapper {
+    margin: 0 0 8px;
+  }
+  .btn-toggle-text {
+    margin: 8px 0 0;
+    font-size: 12px;
+  }
+  .reviews {
+    margin: 0 0 60px;
+  }
+  .reviews-box {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .reviews-box .date {
+    margin: 16px 0 0;
+  }
+  .doctors-card__description {
+    max-height: 58px;
   }
 }
