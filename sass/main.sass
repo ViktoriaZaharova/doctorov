@@ -284,6 +284,7 @@
 	right: 0
 	top: 0
 	z-index: 1
+	box-shadow: 0 6px 20px rgba(#141414, .08)
 	&:hover, &:focus, &:active, &.active
 		stroke: $accent
 		fill: $accent
@@ -440,6 +441,7 @@
 
 .list-address
 	width: 100%
+	margin: 16px 0 0
 
 .list-address-item
 	display: flex
@@ -551,6 +553,10 @@
 		margin: 0 16px 0 0
 	.rating-value
 		margin: 0
+	&__head
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
 	&__body
 		margin: 16px 0
 		.box-text
@@ -593,11 +599,16 @@
 		font-weight: 500
 		line-height: 150%
 	&__name
-		width: 100%
+		width: fit-content
+		// width: 100%
 		display: flex
 		align-items: flex-start
 		flex-wrap: wrap
-		margin: 0 0 8px
+		margin: 0 0 8px 0
+
+.reviews-box-wrapper
+	.reviews-box__body
+		margin-bottom: 0		
 
 .status-visit
 	display: flex
@@ -682,6 +693,7 @@
 		.price-value
 			color: $accent
 			margin: 0 0 0 auto
+			white-space: nowrap
 
 .prices-box-doc
 	display: none
@@ -721,6 +733,7 @@
 			padding: 0 10px 0 0
 		span
 			color: $accent
+			white-space: nowrap
 			padding: 0 0 0 10px
 
 .certificates-slider

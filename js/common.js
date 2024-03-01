@@ -186,23 +186,32 @@ $('.doctors-neardy-slider').slick({
 	fade: true,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				arrows: false,
+				// autoplay: true
+			}
+		}
+	]
 });
 
 // slick active
-$(window).on('load resize', function () {
-	if ($(window).width() < 576) {
-		$('.time-list-slider-mob:not(.slick-initialized)').slick({
-			dots: false,
-			infinite: true,
-			speed: 100,
-			slidesToShow: 1,
-			arrows: false,
-			variableWidth: true,
-		});
-	} else {
-		$(".time-list-slider-mob.slick-initialized").slick("unslick");
-	}
-});
+// $(window).on('load resize', function () {
+// 	if ($(window).width() < 576) {
+// 		$('.time-list-slider-mob:not(.slick-initialized)').slick({
+// 			dots: false,
+// 			infinite: true,
+// 			speed: 100,
+// 			slidesToShow: 1,
+// 			arrows: false,
+// 			variableWidth: true,
+// 		});
+// 	} else {
+// 		$(".time-list-slider-mob.slick-initialized").slick("unslick");
+// 	}
+// });
 // slick active
 
 // tooltip

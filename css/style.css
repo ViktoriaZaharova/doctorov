@@ -472,12 +472,16 @@ ul, ol {
 }
 
 .list-dots-accent li {
+  margin: 0 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.list-dots-accent li:last-child {
+  margin: 0;
 }
 .list-dots-accent li::before {
   content: "";

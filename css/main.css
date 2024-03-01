@@ -428,6 +428,8 @@
   right: 0;
   top: 0;
   z-index: 1;
+  -webkit-box-shadow: 0 6px 20px rgba(20, 20, 20, 0.08);
+          box-shadow: 0 6px 20px rgba(20, 20, 20, 0.08);
 }
 .add-favorite:hover, .add-favorite:focus, .add-favorite:active, .add-favorite.active {
   stroke: #237AE0;
@@ -671,6 +673,7 @@
 
 .list-address {
   width: 100%;
+  margin: 16px 0 0;
 }
 
 .list-address-item {
@@ -831,6 +834,16 @@
 .reviews-box .rating-value {
   margin: 0;
 }
+.reviews-box__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .reviews-box__body {
   margin: 16px 0;
 }
@@ -903,7 +916,9 @@
   line-height: 150%;
 }
 .reviews-box__name {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,7 +927,11 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 8px;
+  margin: 0 0 8px 0;
+}
+
+.reviews-box-wrapper .reviews-box__body {
+  margin-bottom: 0;
 }
 
 .status-visit {
@@ -1049,6 +1068,7 @@
 .prices-box h4 .price-value {
   color: #237AE0;
   margin: 0 0 0 auto;
+  white-space: nowrap;
 }
 
 .prices-box-doc {
@@ -1103,6 +1123,7 @@
 }
 .list-price li span {
   color: #237AE0;
+  white-space: nowrap;
   padding: 0 0 0 10px;
 }
 

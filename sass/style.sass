@@ -355,8 +355,11 @@ ul, ol
 
 .list-dots-accent
 	li
+		margin: 0 0 10px
 		display: flex
 		align-items: flex-start
+		&:last-child
+			margin: 0
 		&::before
 			content: ''
 			display: inline-block
