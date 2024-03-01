@@ -34,7 +34,7 @@
 							<use xlink:href="img/sprite.svg#burger"></use>
 						</svg></a>
 					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-	
+
 					<nav class="nav nav-menu">
 						<a href="#" class="nav-menu__close"><svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#close"></use>
@@ -45,7 +45,7 @@
 							<li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
 							<li class="nav-item"><a href="#services" class="nav-link go_to">Услуги</a></li>
 						</ul>
-	
+
 						<a href="#" class="link-favorites link">
 							<span class="link-favorites__icon link-icon"><svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#favorite"></use>
@@ -65,12 +65,12 @@
 							<span class="phone__text link-text">+7 (499) 519-33-97</span>
 						</a>
 					</nav>
-	
+
 					<a href="#" class="locaton-city link" data-bs-toggle="modal" data-bs-target="#locationModal">
 						<span class="locaton-city__icon link-icon"><img src="img/location.svg" alt=""></span>
 						<span class="locaton-city__text link-text">Москва</span>
 					</a>
-	
+
 					<a href="tel:+74995193397" class="phone link">
 						<span class="phone__icon link-icon">
 							<svg class="svg-icon">
@@ -79,14 +79,14 @@
 						</span>
 						<span class="phone__text link-text">+7 (499) 519-33-97</span>
 					</a>
-	
+
 					<div class="btn-search"><svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#search"></use>
 						</svg></div>
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="header-search-wrapper">
 			<div class="container">
 				<div class="row">
@@ -127,7 +127,7 @@
 									</div>
 								</div>
 							</div>
-	
+
 							<button type="submit" class="btn btn-accent btn-search-submit">
 								<span class="btn-icon">
 									<svg class="svg-icon">
@@ -147,7 +147,7 @@
 		<div class="page-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 d-none d-sm-block">
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
@@ -158,7 +158,7 @@
 						</nav>
 					</div>
 
-					<div class="col-12">
+					<div class="col-12 d-none d-sm-block">
 						<form method="post" class="form-search form-search-doctors">
 							<label>
 								<input type="text" name="search" required>
@@ -259,7 +259,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-content__box product-content__description doctors-card-item">
+							<div class="product-content__box product-content__description doctors-card-item d-none d-lg-block">
 								<div class="h4">О клинике</div>
 								<div class="box-text">
 									<p>Клиника неврологии и ортопедии ЗдравКлиник на Беговой: ★ 18 врачей ★ 2892 проверенных отзыва
@@ -367,6 +367,28 @@
 								<a href="#" class="btn btn-accent w-100" data-bs-toggle="modal" data-bs-target="#callModal">Записаться
 									в клинику</a>
 							</div>
+						</div>
+					</div>
+					<div class="col-12 d-block d-lg-none">
+						<div class="product-content__box product-content__description doctors-card-item">
+							<div class="h4">О клинике</div>
+							<div class="box-text">
+								<p>Клиника неврологии и ортопедии ЗдравКлиник на Беговой: ★ 18 врачей ★ 2892 проверенных отзыва
+									пациентов ★ Лучшая цена
+									записи ★ Актуальные цены на услуги! Многопрофильная клиника на станции метро 'Беговая' осуществляет
+									деятельность под
+									руководством д.м.н., профессора Бабовникова А.В. и входит в состав сети медицинских центров
+									ЗдравКлини. В клинике ведут
+									прием доктора и кандидаты медицинских наук, врачи высшей категории, имеющие большой стаж
+									стационарной работы в ведущих
+									лечебных учреждениях г...</p>
+							</div>
+							<a href="#" class="btn-toggle-text link-accent">
+								<span class="link-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+									</svg></span>
+								<span class="link-text">Подробнее</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -652,10 +674,11 @@
 											<div class="reviews-box__head">
 												<div class="reviews-box__name h4">Никита
 
-													<div class="status-visit">
-														<img src="img/checked-blue.svg" alt="">
-														<span>Прием у врача подтвержден</span>
-													</div>
+
+												</div>
+												<div class="status-visit">
+													<img src="img/checked-blue.svg" alt="">
+													<span>Прием у врача подтвержден</span>
 												</div>
 												<div class="rating-wrapper">
 													<ul class="list-rating my-ul">
@@ -695,10 +718,11 @@
 											<div class="reviews-box__head">
 												<div class="reviews-box__name h4">Валентина
 
-													<div class="status-visit">
-														<img src="img/checked-blue.svg" alt="">
-														<span>Прием у врача подтвержден</span>
-													</div>
+
+												</div>
+												<div class="status-visit">
+													<img src="img/checked-blue.svg" alt="">
+													<span>Прием у врача подтвержден</span>
 												</div>
 												<div class="rating-wrapper">
 													<ul class="list-rating my-ul">
@@ -740,10 +764,11 @@
 											<div class="reviews-box__head">
 												<div class="reviews-box__name h4">Алина
 
-													<div class="status-visit">
-														<img src="img/checked-blue.svg" alt="">
-														<span>Прием у врача подтвержден</span>
-													</div>
+
+												</div>
+												<div class="status-visit">
+													<img src="img/checked-blue.svg" alt="">
+													<span>Прием у врача подтвержден</span>
 												</div>
 												<div class="rating-wrapper">
 													<ul class="list-rating my-ul">
@@ -783,10 +808,11 @@
 											<div class="reviews-box__head">
 												<div class="reviews-box__name h4">Валентина
 
-													<div class="status-visit">
-														<img src="img/checked-blue.svg" alt="">
-														<span>Прием у врача подтвержден</span>
-													</div>
+
+												</div>
+												<div class="status-visit">
+													<img src="img/checked-blue.svg" alt="">
+													<span>Прием у врача подтвержден</span>
 												</div>
 												<div class="rating-wrapper">
 													<ul class="list-rating my-ul">
@@ -828,10 +854,11 @@
 											<div class="reviews-box__head">
 												<div class="reviews-box__name h4">Валентина
 
-													<div class="status-visit">
-														<img src="img/checked-blue.svg" alt="">
-														<span>Прием у врача подтвержден</span>
-													</div>
+
+												</div>
+												<div class="status-visit">
+													<img src="img/checked-blue.svg" alt="">
+													<span>Прием у врача подтвержден</span>
 												</div>
 												<div class="rating-wrapper">
 													<ul class="list-rating my-ul">
@@ -943,6 +970,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -966,7 +1013,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1005,7 +1052,7 @@
 									дни</a>
 							</div>
 							<div class="doctors-card-item doctors-card-item-time">
-								<ul class="time-list my-ul">
+								<ul class="time-list time-list-slider-mob my-ul">
 									<li>
 										<a href="#" class="time-list-item no-active">
 											<span>10:30</span>
@@ -1122,6 +1169,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -1145,7 +1212,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1240,6 +1307,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -1263,7 +1350,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1302,7 +1389,7 @@
 									дни</a>
 							</div>
 							<div class="doctors-card-item doctors-card-item-time">
-								<ul class="time-list my-ul">
+								<ul class="time-list time-list-slider-mob my-ul">
 									<li>
 										<a href="#" class="time-list-item">
 											<span>10:30</span>
@@ -1427,6 +1514,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -1450,7 +1557,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1539,6 +1646,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -1562,7 +1689,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1581,7 +1708,7 @@
 								</div>
 							</div>
 							<div class="doctors-card-item doctors-card-item-time">
-								<ul class="time-list my-ul">
+								<ul class="time-list time-list-slider-mob my-ul">
 									<li>
 										<a href="#" class="time-list-item no-active">
 											<span>10:30</span>
@@ -1697,6 +1824,26 @@
 									<li>Стаж 43 года</li>
 									<li>Врач высшей категории</li>
 								</ul>
+								<div class="rating-wrapper">
+									<ul class="list-rating my-ul">
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+										<li><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg></li>
+									</ul>
+									<a href="#" class="color-accent rating-value">82 отзыва</a>
+								</div>
 							</div>
 							<div class="doctors-card-item reception-type">
 								<div class="doctors-card-item__title">Тип приема</div>
@@ -1720,7 +1867,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -1759,7 +1906,7 @@
 									дни</a>
 							</div>
 							<div class="doctors-card-item doctors-card-item-time">
-								<ul class="time-list my-ul">
+								<ul class="time-list time-list-slider-mob my-ul">
 									<li>
 										<a href="#" class="time-list-item no-active">
 											<span>10:30</span>
@@ -1899,7 +2046,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -2017,7 +2164,7 @@
 									<div class="doctors-card-item__title">Запись на прием</div>
 									<a href="tel:+78002000000" class="doctor-phone">+7 800 200-00-00</a>
 								</div>
-								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light">
+								<a href="doctor-page.html" class="btn btn-sm btn-border btn-accent-light btn-med">
 									<span class="btn-icon"><svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#plus"></use>
 										</svg></span>
@@ -2056,7 +2203,7 @@
 									дни</a>
 							</div>
 							<div class="doctors-card-item doctors-card-item-time">
-								<ul class="time-list my-ul">
+								<ul class="time-list time-list-slider-mob my-ul">
 									<li>
 										<a href="#" class="time-list-item">
 											<span>10:30</span>
@@ -2144,62 +2291,62 @@
 		</div>
 	</section>
 
-		<footer>
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-8 col-xl-6">
-							<div class="footer-box">
-								<div class="h4">Навигация</div>
-								<ul class="footer-menu my-ul">
-									<li><a href="doctors.html">Все врачи</a></li>
-									<li><a href="contacts.html">Контакты</a></li>
-									<li><a href="clinics.html">Все клиники</a></li>
-									<li><a href="agreement.html" target="_blank">Соглашение</a></li>
-									<li><a href="#services" class="go_to">Услуги</a></li>
-									<li><a href="politics.html" target="_blank">Политика обработки перс. данных</a></li>
-								</ul>
-							</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8 col-xl-6">
+						<div class="footer-box">
+							<div class="h4">Навигация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="doctors.html">Все врачи</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="clinics.html">Все клиники</a></li>
+								<li><a href="agreement.html" target="_blank">Соглашение</a></li>
+								<li><a href="#services" class="go_to">Услуги</a></li>
+								<li><a href="politics.html" target="_blank">Политика обработки перс. данных</a></li>
+							</ul>
 						</div>
-						<div class="col-12 col-lg-4 col-xl-3 offset-xl-3">
-							<div class="footer-box">
-								<div class="footer-call">
-									<p>Запись по телефону на прием</p>
-									<a href="tel:+74995193271" class="footer-phone">8 (499) 519-32-71</a>
-								</div>
-								<div class="footer-call">
-									<p>Обращения по почте</p>
-									<a href="mailto:info@doctorov.org" class="footer-mail">info@doctorov.org</a>
-								</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3 offset-xl-3">
+						<div class="footer-box">
+							<div class="footer-call">
+								<p>Запись по телефону на прием</p>
+								<a href="tel:+74995193271" class="footer-phone">8 (499) 519-32-71</a>
+							</div>
+							<div class="footer-call">
+								<p>Обращения по почте</p>
+								<a href="mailto:info@doctorov.org" class="footer-mail">info@doctorov.org</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 mb-24">
-							<div class="copyright">© 2024 - DOCTOROV.ORG - Все доктора в одном месте!</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-24">
+						<div class="copyright">© 2024 - DOCTOROV.ORG - Все доктора в одном месте!</div>
+					</div>
+					<div class="col-12 col-lg-8 col-xl-9">
+						<div class="box-text">
+							<p>На сайте предоставлена только информация о клиниках и врачах, для консультации по болезням и лечению
+								обратитесь к
+								лечащему врачу.</p>
+							<p>Запись к врачам производится через официального партнера "СберЗдоровье"</p>
 						</div>
-						<div class="col-12 col-lg-8 col-xl-9">
-							<div class="box-text">
-								<p>На сайте предоставлена только информация о клиниках и врачах, для консультации по болезням и лечению
-									обратитесь к
-									лечащему врачу.</p>
-								<p>Запись к врачам производится через официального партнера "СберЗдоровье"</p>
-							</div>
-						</div>
-						<div class="col-12 col-lg-4 col-xl-3">
-							<div class="box-text box-text-documents">
-								<p>ИП Шайхов Т.Р.</p>
-								<p>ОГРНИП 343103403498</p>
-							</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3">
+						<div class="box-text box-text-documents">
+							<p>ИП Шайхов Т.Р.</p>
+							<p>ОГРНИП 343103403498</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
 
 	<!-- Модальное окно -->
