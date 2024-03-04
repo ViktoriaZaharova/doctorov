@@ -1314,10 +1314,17 @@ a.color-accent:hover {
   background: rgba(35, 122, 224, 0.06);
 }
 
+.nav-tabs-product {
+  position: sticky;
+  left: 0;
+  top: 10px;
+  z-index: 2;
+}
+
 .tab-content {
   width: 100%;
 }
-.tab-content h2 {
+.tab-content h2, .tab-content .h2 {
   text-align: left;
   margin: 0 0 32px;
 }
@@ -1333,9 +1340,27 @@ a.color-accent:hover {
   margin: 0;
 }
 
+.section {
+  margin: 0 0 80px;
+}
+.section:last-child {
+  margin: 0;
+}
+
 .box-text p {
   margin: 0 0 20px;
 }
 .box-text p:last-child {
   margin: 0;
+}
+
+.js-tab-trigger {
+  cursor: pointer;
+}
+
+.js-tab-content {
+  display: none;
+}
+.js-tab-content.active {
+  display: block;
 }

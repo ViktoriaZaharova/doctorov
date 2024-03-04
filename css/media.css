@@ -256,6 +256,10 @@
   .certificates-item {
     height: auto;
   }
+  .nav-tabs-product {
+    position: relative;
+    top: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -855,5 +859,11 @@
     margin: 0 6px;
     width: 10px;
     height: 10px;
+  }
+  .section {
+    margin: 0 0 40px;
+  }
+  .section:last-child {
+    margin: 0;
   }
 }

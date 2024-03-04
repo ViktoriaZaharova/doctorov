@@ -579,62 +579,32 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-3">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="1-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#1-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="1-tab-pane"
-                    aria-selected="true"
-                  >
+              <ul class="nav nav-tabs nav-tabs-product">
+                <li class="nav-item">
+                  <a href="#section1"
+                    class="nav-link active">
                     Цены
-                  </button>
+                  </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="2-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#2-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="2-tab-pane"
-                    aria-selected="false"
-                  >
+                <li class="nav-item">
+                  <a href="#section2"
+                    class="nav-link">
                     Отзывы
-                  </button>
+                  </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="3-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#3-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="3-tab-pane"
-                    aria-selected="false"
-                  >
+                <li class="nav-item">
+                  <a href="#section3"
+                    class="nav-link">
                     Лицензии
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="col-12 col-lg-9">
               <div class="tab-content">
-                <div
-                  class="tab-pane fade show active"
-                  id="1-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="1-tab"
-                  tabindex="0"
-                >
-                  <h2>Цены</h2>
-                  <div class="prices-category">
+								<h2>Цены</h2>
+								<div class="section section-scroll" id="section1">
+<div class="prices-category">
                     <h3>Медицинские услуги</h3>
                     <div class="prices-box__wrapper">
                       <div class="prices-box">
@@ -869,17 +839,10 @@
                       >Показать еще</a
                     >
                   </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="2-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="2-tab"
-                  tabindex="0"
-                >
-                  <h2>2891 отзыв</h2>
-
-                  <div class="reviews-filter">
+								</div>
+								<div class="section section-scroll" id="section2">
+<h3 class="h2">2891 отзыв</h3>
+<div class="reviews-filter">
                     <div class="reviews-filter-rating">
                       <p>Рейтинг</p>
                       <div class="reviews-filter-rating__val">
@@ -1172,18 +1135,11 @@
                   <a
                     href="#"
                     class="btn btn-border-accent w-100 btn-toggle-reviews"
-                    >Показать еще</a
-                  >
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="3-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="3-tab"
-                  tabindex="0"
-                >
-                  <h2>Лицензии</h2>
-                  <div class="certificates-slider">
+                    >Показать еще</a>
+								</div>
+								<div class="section section-scroll" id="section3">
+<h3 class="h2">Лицензии</h3>
+<div class="certificates-slider">
                     <div class="slide">
                       <a
                         href="img/certificate.jpg"
@@ -1218,7 +1174,8 @@
                     </div>
                   </div>
                   <div class="slider-nav certificates-slider__nav"></div>
-                </div>
+								</div>
+                
               </div>
             </div>
           </div>

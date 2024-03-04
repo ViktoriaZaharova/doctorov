@@ -977,9 +977,15 @@ a.color-accent
 			color: $accent
 			background: rgba($accent, .06)
 
+.nav-tabs-product
+	position: sticky
+	left: 0
+	top: 10px
+	z-index: 2
+
 .tab-content
 	width: 100%
-	h2
+	h2, .h2
 		text-align: left
 		margin: 0 0 32px
 	h3
@@ -991,8 +997,21 @@ a.color-accent
 		&:last-child
 			margin: 0
 
+.section
+	margin: 0 0 80px
+	&:last-child
+		margin: 0
+
 .box-text
 	p
 		margin: 0 0 20px
 		&:last-child
 			margin: 0
+
+.js-tab-trigger
+	cursor: pointer
+
+.js-tab-content
+	display: none
+	&.active
+		display: block
