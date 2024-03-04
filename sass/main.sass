@@ -72,7 +72,7 @@
 .list-services
 	margin: 24px 0 0
 
-	li
+	&__link
 		z-index: 1
 		position: relative
 		width: 100%
@@ -80,6 +80,9 @@
 		align-items: center
 		margin: 0 0 16px
 		overflow: hidden
+		color: $black
+		&:hover
+			color: $accent
 		&:last-child
 			margin: 0
 		&::before
@@ -316,8 +319,7 @@
 .doctor-name
 	margin: 0 0 8px
 	color: $black
-	&:hover
-		color: $accent
+	text-align: left
 
 .doctor-position
 	color: $grey
@@ -608,7 +610,7 @@
 
 .reviews-box-wrapper
 	.reviews-box__body
-		margin-bottom: 0		
+		margin-bottom: 0
 
 .status-visit
 	display: flex

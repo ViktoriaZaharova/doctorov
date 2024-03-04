@@ -40,6 +40,9 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .nav-breadcrumb {
+    margin: 0 0 16px;
+  }
   .nav-menu {
     display: none;
     position: fixed;
@@ -137,6 +140,9 @@
   }
   .search-doctors-result {
     margin: 0 0 16px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .doctors-card {
     padding: 16px;
@@ -432,6 +438,9 @@
   }
   .modal-footer .doctor-phone {
     font-size: 18px;
+  }
+  .modal .form-callback [type=submit] {
+    margin: 0 auto;
   }
   .consent {
     font-size: 12px;
@@ -835,5 +844,16 @@
   }
   .map-wrapper {
     height: 300px;
+  }
+  .nav-breadcrumb {
+    margin: 0 0 16px;
+  }
+  .breadcrumb {
+    font-size: 12px;
+  }
+  .breadcrumb-item::after {
+    margin: 0 6px;
+    width: 10px;
+    height: 10px;
   }
 }

@@ -102,7 +102,7 @@
 .list-services {
   margin: 24px 0 0;
 }
-.list-services li {
+.list-services__link {
   z-index: 1;
   position: relative;
   width: 100%;
@@ -114,11 +114,15 @@
           align-items: center;
   margin: 0 0 16px;
   overflow: hidden;
+  color: #141414;
 }
-.list-services li:last-child {
+.list-services__link:hover {
+  color: #237AE0;
+}
+.list-services__link:last-child {
   margin: 0;
 }
-.list-services li::before {
+.list-services__link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -483,9 +487,7 @@
 .doctor-name {
   margin: 0 0 8px;
   color: #141414;
-}
-.doctor-name:hover {
-  color: #237AE0;
+  text-align: left;
 }
 
 .doctor-position {

@@ -123,7 +123,7 @@ input:focus, input.active, input:active, textarea:focus, textarea.active, textar
   border-color: #D2DAE1;
 }
 input:focus + .input-text, input.active + .input-text, input:active + .input-text, textarea:focus + .input-text, textarea.active + .input-text, textarea:active + .input-text, select:focus + .input-text, select.active + .input-text, select:active + .input-text {
-  top: 9px;
+  top: 6px;
   font-size: 10px;
 }
 input.disabled, input:disabled, textarea.disabled, textarea:disabled, select.disabled, select:disabled {
@@ -133,7 +133,7 @@ input:valid, textarea:valid, select:valid {
   border-color: #D2DAE1;
 }
 input:valid + .input-text, textarea:valid + .input-text, select:valid + .input-text {
-  top: 9px;
+  top: 6px;
   font-size: 10px;
 }
 

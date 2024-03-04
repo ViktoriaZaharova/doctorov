@@ -41,7 +41,7 @@ $('.btn-search').on('click', function () {
 // form search
 $('.form-search input').on('keyup change', function () {
 	if (this.value.length > 0) {
-		$(this).parents('.form-search').find('.input-clear').css('display', 'flex');
+		$(this).parents('label').find('.input-clear').css('display', 'flex');
 		$('.form-search .result-search').fadeIn();
 	} else {
 		$('.form-search .result-search').fadeOut();
@@ -78,17 +78,17 @@ $('.link-toggle-category').on('click', function (e) {
 });
 
 $('.list-services').each(function () {
-	if ($(this).find('li').length > 6) {
-		$(this).find('li').slice(6).hide();
+	if ($(this).find('.list-services__link').length > 6) {
+		$(this).find('.list-services__link').slice(6).hide();
 		$(this).parents('.row').find('.btn-toggle-services').css('display', 'flex');
 	}
 });
 
 $('.btn-toggle-services').on('click', function (e) {
 	e.preventDefault();
-	$(this).parents('.row').find('.list-services li:hidden').show();
+	$(this).parents('.row').find('.list-services .list-services__link:hidden').show();
 
-	var onBlock = $(this).parents('.row').find('.list-services li:hidden').length;
+	var onBlock = $(this).parents('.row').find('.list-services .list-services__link:hidden').length;
 	if (onBlock <= 0) {
 		$(this).hide();
 	}
